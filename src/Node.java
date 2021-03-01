@@ -35,7 +35,7 @@ public class Node extends ImplExample {
 	public void get_stub(int port_id, int node_id) {
 		try {  
 	         // Getting the registry 
-	         Registry registry = LocateRegistry.getRegistry("jshdgf", port_id); 
+	         Registry registry = LocateRegistry.getRegistry("localhost", port_id); 
 	    
 	         // Looking up the registry for the remote object 
 	         Hello stub = (Hello) registry.lookup(String.valueOf(node_id)); 
