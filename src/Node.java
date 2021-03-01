@@ -44,7 +44,8 @@ public class Node extends ImplExample {
 	    
 	         // Calling the remote method using the obtained object 
 	         String s = String.valueOf(node_id);
-	         stub.lookup(s, 10); 
+	         stub.call("boar",10, s);
+//	         stub.lookup(s, 10); 
 	         
 	         // System.out.println("Remote method invoked"); 
 	      } catch (Exception e) {
