@@ -10,15 +10,16 @@ public class Initializer {
 		p2p.put(2, 1);
 		HashMap<Integer, String> roles = new HashMap<Integer, String>();
 		
+		
 		//Defining roles randomly
-		int no_sellers = 1;
-		int no_buyers = N-1;
+//		int no_sellers = 1;
+//		int no_buyers = N-1;
 		
 		roles.put(1, "buyer");
 		roles.put(2, "seller");
 		
-		Node peer1 = new Node(1, "buyer", 8003);
-		Node peer2 = new Node(2, "seller", 8004);
+		Node peer1 = new Node(1, "buyer", 8003, p2p, 0);
+		Node peer2 = new Node(2, "seller", 8004, p2p, 1);
 		
 		peer1.get_stub(8004, 2);
 	}

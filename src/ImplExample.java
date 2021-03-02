@@ -6,6 +6,8 @@ public class ImplExample implements Hello {
       System.out.println("This is an example RMI program");  
    }  
    
+   public void helper()
+   
    public void lookup(String productname, int hopcount) {
 	   System.out.println("Called Lookup");
 	   System.out.println("The product name is: "+ productname);
