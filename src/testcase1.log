@@ -1,0 +1,63 @@
+1::Wed Mar 03 17:46:03 EST 2021::Logger Initialized
+1::Wed Mar 03 17:46:04 EST 2021::First Testcase:
+1::Wed Mar 03 17:46:04 EST 2021::Assign one peer to be a buyer of fish and another to be a seller of fish. Ensure that all fish is sold and restocked forever.
+1::Wed Mar 03 17:46:04 EST 2021::Peer 0 ready
+1::Wed Mar 03 17:46:04 EST 2021::Peer 1 ready
+1::Wed Mar 03 17:46:04 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 17:46:04 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+23::Wed Mar 03 17:46:04 EST 2021::Peer:1: I have 5 items of 'Fish'
+1::Wed Mar 03 17:46:04 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 17:46:04 EST 2021::Peer: 0: Buying 'Fish' from peer 1
+1::Wed Mar 03 17:46:04 EST 2021::Peer: 0: Successfully bought 'Fish' from 1
+1::Wed Mar 03 17:46:07 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 17:46:07 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+23::Wed Mar 03 17:46:07 EST 2021::Peer:1: I have 4 items of 'Fish'
+1::Wed Mar 03 17:46:07 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 17:46:07 EST 2021::Peer: 0: Buying 'Fish' from peer 1
+1::Wed Mar 03 17:46:07 EST 2021::Peer: 0: Successfully bought 'Fish' from 1
+1::Wed Mar 03 17:46:10 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 17:46:10 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+23::Wed Mar 03 17:46:10 EST 2021::Peer:1: I have 3 items of 'Fish'
+1::Wed Mar 03 17:46:10 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 17:46:10 EST 2021::Peer: 0: Buying 'Fish' from peer 1
+1::Wed Mar 03 17:46:10 EST 2021::Peer: 0: Successfully bought 'Fish' from 1
+1::Wed Mar 03 17:46:13 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 17:46:13 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+23::Wed Mar 03 17:46:13 EST 2021::Peer:1: I have 2 items of 'Fish'
+1::Wed Mar 03 17:46:13 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 17:46:13 EST 2021::Peer: 0: Buying 'Fish' from peer 1
+1::Wed Mar 03 17:46:13 EST 2021::Peer: 0: Successfully bought 'Fish' from 1
+1::Wed Mar 03 17:46:16 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 17:46:16 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+23::Wed Mar 03 17:46:16 EST 2021::Peer:1: I have 1 items of 'Fish'
+1::Wed Mar 03 17:46:16 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 17:46:16 EST 2021::Peer: 0: Buying 'Fish' from peer 1
+1::Wed Mar 03 17:46:16 EST 2021::Peer: 0: Successfully bought 'Fish' from 1
+1::Wed Mar 03 17:46:19 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 17:46:19 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+23::Wed Mar 03 17:46:19 EST 2021::Peer:1: My items are finished. Restocking them.
+1::Wed Mar 03 17:46:19 EST 2021::Peer: 0: Couldn't find the item 'Fish'
+1::Wed Mar 03 17:46:22 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 17:46:22 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+23::Wed Mar 03 17:46:22 EST 2021::Peer:1: I have 5 items of 'Fish'
+1::Wed Mar 03 17:46:22 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 17:46:22 EST 2021::Peer: 0: Buying 'Fish' from peer 1
+1::Wed Mar 03 17:46:22 EST 2021::Peer: 0: Successfully bought 'Fish' from 1
+1::Wed Mar 03 17:46:25 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 17:46:25 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+23::Wed Mar 03 17:46:25 EST 2021::Peer:1: I have 4 items of 'Fish'
+1::Wed Mar 03 17:46:25 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 17:46:25 EST 2021::Peer: 0: Buying 'Fish' from peer 1
+1::Wed Mar 03 17:46:25 EST 2021::Peer: 0: Successfully bought 'Fish' from 1
+1::Wed Mar 03 17:46:28 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 17:46:28 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+23::Wed Mar 03 17:46:28 EST 2021::Peer:1: I have 3 items of 'Fish'
+1::Wed Mar 03 17:46:28 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 17:46:28 EST 2021::Peer: 0: Buying 'Fish' from peer 1
+1::Wed Mar 03 17:46:28 EST 2021::Peer: 0: Successfully bought 'Fish' from 1
+1::Wed Mar 03 17:46:31 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 17:46:31 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+23::Wed Mar 03 17:46:31 EST 2021::Peer:1: I have 2 items of 'Fish'
+1::Wed Mar 03 17:46:31 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 17:46:31 EST 2021::Peer: 0: Buying 'Fish' from peer 1
+1::Wed Mar 03 17:46:31 EST 2021::Peer: 0: Successfully bought 'Fish' from 1

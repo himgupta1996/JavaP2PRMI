@@ -16,6 +16,7 @@ public class Node implements Hello {
 	private int testcase;
 	private Logger logger;
 	private int hopcount = 1;
+	public static HashMap<Integer, String[]> config_lookup = new HashMap<Integer, String[]>();
 	
 	public Node(int node_id, String role,  int port_id, String item, int[] peers, int testcase, Logger logger) {
 		this.role = role;
@@ -50,14 +51,12 @@ public class Node implements Hello {
 		if(this.role.equals("seller")) {
 			if(productname.equals(this.item)) {
 				if(this.m>0) {
-					//TODO: remove the buyer Id hard coding
 					logger.info("Peer:"+this.node_id+": I have "+this.m+" items of '"+this.item+"'");
 					this.reply(buyerId, this.node_id);
 				}
 				else if(this.m == 0) {
 					System.out.println("Peer:"+this.node_id+": My items are finished. Restocking them.");
 					logger.info("Peer:"+this.node_id+": My items are finished. Restocking them.");
-					//TODO: Remove the hardcoded m
 					this.m = max_sell_items;
 					if(this.testcase==1) {
 						this.item = "Fish";
@@ -94,7 +93,7 @@ public class Node implements Hello {
 	    	try {
 	    		logger.info("Peer: "+ this.node_id +": Buying '"+this.item+ "' from peer "+sellerId);
 	    		//TODO: get the seller port Id and Ip address from the configuration file
-	    		String neighbour_ip = "127.0.0.1";
+	    		String neighbour_ip = Node.config_lookup.get(sellerId)[1]; //sellerid
 				int neighbour_port = 8004;
 				Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
 				Hello stub = (Hello) registry.lookup(String.valueOf(sellerId));
@@ -128,7 +127,7 @@ public class Node implements Hello {
 			for(int i= 0; i<this.peers.length;i++) {
 				int neighbour_peer = peers[i];
 				//TODO: Get associated port and ip address of the <neighbour_peer>
-				String neighbour_ip = "127.0.0.1";
+				String neighbour_ip = "127.0.0.1"; //peers[i]
 				int neighbour_port = 8004;
 				try {
 					Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
@@ -149,7 +148,7 @@ public class Node implements Hello {
 		System.out.println("Peer:"+this.node_id+" In reply");
 		try{
 			//TODO: get the values dynamically
-			String neighbour_ip = "127.0.0.1";
+			String neighbour_ip = "127.0.0.1"; //buyerId
 			int neighbour_port = 8003;
 		    Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
 			Hello stub = (Hello) registry.lookup(String.valueOf(buyerId));
@@ -163,8 +162,7 @@ public class Node implements Hello {
 	
 	public void start() {
 		if(this.role == "buyer"){
-			int i = 0;
-			while(i!=8){			
+			while(true){			
 				if(this.testcase == 1 || this.testcase == 2) {
 					this.item = "Fish";
 				}
@@ -187,9 +185,13 @@ public class Node implements Hello {
 				} catch (InterruptedException ie) {
 				    Thread.currentThread().interrupt();
 				}
-				i+=1;
 			}
 		}
+	}
+
+	public static void config_lookup_initialize(HashMap<Integer, String[]> config_lookup_value) {
+		config_lookup = config_lookup_value;
+		
 	}
 	
 }
