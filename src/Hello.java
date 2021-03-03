@@ -8,7 +8,7 @@ public interface Hello extends Remote {
 //   void reply(int buyerId, int sellerId) throws RemoteException;
 //   void printMsg() throws RemoteException;
 //   void buy(int sellerId) throws RemoteException;
-	void lookup_helper(String product_name, int hopcount) throws RemoteException;
+	void lookup_helper(String product_name, int hopcount, int buyer_id) throws RemoteException;
 	void reply_helper(int buyer_id, int seller_id) throws RemoteException;
 	void buy(int seller_id) throws RemoteException;
 } 

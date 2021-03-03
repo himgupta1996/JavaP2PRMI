@@ -42,7 +42,7 @@ public class Node implements Hello {
 	    }
 	}
 	
-	public void lookup_helper(String productname, int hopcount) {
+	public void lookup_helper(String productname, int hopcount, int buyerId) {
 		System.out.println("Peer:"+this.node_id+" In lookup_helper");
 		
 		System.out.println("I have "+this.m+" items of "+this.item);
@@ -52,7 +52,7 @@ public class Node implements Hello {
 				if(this.m>0) {
 					//TODO: remove the buyer Id hard coding
 					logger.info("Peer:"+this.node_id+": I have "+this.m+" items of '"+this.item+"'");
-					this.reply(1, this.node_id);
+					this.reply(buyerId, this.node_id);
 				}
 				else if(this.m == 0) {
 					System.out.println("Peer:"+this.node_id+": My items are finished. Restocking them.");
@@ -133,7 +133,7 @@ public class Node implements Hello {
 				try {
 					Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
 					Hello stub = (Hello) registry.lookup(String.valueOf(neighbour_peer));
-					stub.lookup_helper(product_name, hopcount-1);
+					stub.lookup_helper(product_name, hopcount-1, this.node_id);
 					
 				}
 				catch(Exception e) {
@@ -142,7 +142,6 @@ public class Node implements Hello {
 				}
 				
 			}
-			
 		}
 	}
 	
@@ -174,9 +173,6 @@ public class Node implements Hello {
 				    this.item = this.items[rnd];
 				}
 
-//				//TODO: take the variable hopcount as input and check if it is greater than zero..If yes, call lookup
-//				//TODO: remove the hardcoding
-//				this.item = "Salt";
 			    System.out.println("Peer: "+this.node_id+ ": I want to buy "+ this.item);
 			    logger.info("Peer: "+this.node_id+ ": I want to buy '"+ this.item+"'");
 				this.lookup(this.item, this.hopcount);
@@ -186,13 +182,13 @@ public class Node implements Hello {
 				else {
 					logger.info("Peer: "+this.node_id+ ": Couldn't find the item '"+ this.item+"'");
 				}
+				try {
+				    Thread.sleep(3 * 1000);
+				} catch (InterruptedException ie) {
+				    Thread.currentThread().interrupt();
+				}
 				i+=1;
 			}
-		}
-		if(this.role == "seller") {
-			//TODO
-			System.out.println("Now Starting the seller");
-//			this.item = "Salt";
 		}
 	}
 	

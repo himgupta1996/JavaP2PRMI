@@ -7,7 +7,7 @@ public class Initializer {
 	public static void main(String[] args) {
 		Logger logger = Logger.getLogger("MyLog"); 
 	    FileHandler fh;  
-		int testcase = 3;
+		int testcase = 1;
 		String filename;
 		if(testcase ==1) {
 			filename = "testcase1.log";
@@ -60,7 +60,7 @@ public class Initializer {
 		
 		//TODO: Randomly Assign roles or assign according to the input
 		String peer1item = "Fish";
-		String peer2item = "Boar";
+		String peer2item = "Fish";
 		
 		//if input comes, initialize with that value, otherwise 3
 		
