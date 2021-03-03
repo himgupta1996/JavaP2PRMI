@@ -11,25 +11,22 @@ public class Node implements Hello {
 	private String item;
 	String items[] = {"Boar", "Salt", "Fish"};
 	private int[] peers;
+	private int sellerId = -1;
+	private int testcase;
 	
-	public Node(int node_id, String role,  int port_id, String item, int[] peers) {
+	public Node(int node_id, String role,  int port_id, String item, int[] peers, int testcase) {
 		this.role = role;
 		this.node_id = node_id;
 		this.port_id = port_id;
 		this.item = item;
 		this.peers = peers;
-		try { 
-	         // Instantiating the implementation class 
-//	         ImplExample obj = new ImplExample(); 
-	    
+		this.testcase = testcase;
+		try { 	    
 	         // Exporting the object of implementation class  
 	         // (here we are exporting the remote object to the stub) 
 	         Hello stub = (Hello) UnicastRemoteObject.exportObject(this, 0);  
 	         
-	         Registry registry = LocateRegistry.createRegistry(this.port_id); 
-	         
-//	         // Binding the remote object (stub) in the registry 
-//	         Registry registry = LocateRegistry.getRegistry(); 
+	         Registry registry = LocateRegistry.createRegistry(this.port_id);
 	         
 	         registry.bind(String.valueOf(this.node_id), stub);  
 	         System.out.println("Peer "+this.node_id+" ready"); 
@@ -41,67 +38,76 @@ public class Node implements Hello {
 	}
 	
 	public void lookup_helper(String productname, int hopcount) {
-		System.out.println("Called Lookup helper in peer "+this.node_id);
-		System.out.println("My item is "+this.item);
-		System.out.println("The product name is: "+ productname);
-		System.out.println("The hpcount is "+ hopcount );
+		System.out.println("Peer:"+this.node_id+" In lookup_helper");
+//		System.out.println("My item is "+this.item);
+//		System.out.println("The product name is: "+ productname);
+//		System.out.println("The hpcount is "+ hopcount );
 		
-		System.out.println("My role is "+this.role);
+//		System.out.println("My role is "+this.role);
 		
-		if(this.role == "seller") {
-			System.out.println("My item is "+this.item);
-			if(productname == this.item) {
-				System.out.println("My m is "+this.m);
+		System.out.println("I have "+this.m+" items of "+this.item);
+		
+		if(this.role.equals("seller")) {
+			if(productname.equals(this.item)) {
 				if(this.m>0) {
-					System.out.println("Item "+ productname +"found in the peer "+ this.node_id);
-					this.reply(1, 2);
+					//TODO: remove the buyer Id hard coding
+					this.reply(1, this.node_id);
+				}
+				else if(this.m == 0) {
+					System.out.println("Peer:"+this.node_id+" My items are finished. Restocking them.");
+					//TODO: Remove the hardcoded m
+					this.m = 5;
 				}
 			}
 		}
 		else {
-			if(this.m==0){
-				//TODO: Remove the hardcoded m
-				this.m = 5;
-			}
 			this.lookup(productname, hopcount);
 		}
 		   
 	   }
 	   
-    public void buy(int buyerId) {
-	    System.out.println("Called Buy");
-	    System.out.println("The buyer Id is: "+ buyerId);
-	    this.m-=1;
-	   
-    }
-	   
-    public void reply_helper(int buyerId, int sellerId) {
-	    System.out.println("Called reply helper");
-	    System.out.println("The seller Id is: "+ sellerId);
-	    if(buyerId == this.node_id) {
+    public void buy(int sellerId) {
+	    System.out.println("Peer:"+this.node_id+" In Buy.");
+	    if(this.role.equals("seller")) {
+		    this.m-=1;
+	    }
+	    else {
 	    	System.out.println("I am peer "+ this.node_id + ". I found my seller in peer "+ sellerId);
 	    	System.out.println("Let me now buy it");
 	    	try {
-				Registry registry = LocateRegistry.getRegistry("localhost", 8004); 
+	    		//TODO: get the seller port Id and Ip address from the configuration file
+	    		String neighbour_ip = "127.0.0.1";
+				int neighbour_port = 8004;
+				Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
 				Hello stub = (Hello) registry.lookup(String.valueOf(sellerId));
 				stub.buy(this.node_id);	
 				System.out.println("Successfully completed the transaction");
+				this.sellerId = -1;
 			}
 			catch(Exception e) {
 				System.err.println("Client exception: " + e.toString()); 
 		        e.printStackTrace();
 			}
 	    }
-	  //Get associated port and ip address of the <neighbour_peer>
-		
+	   
+    }
+	   
+    public void reply_helper(int buyerId, int sellerId) {
+	    System.out.println("Peer:"+this.node_id+" In reply_helper");
+	    if(buyerId == this.node_id) {
+	    	this.sellerId = sellerId;
+	    }
+	    else {
+	    	this.reply(buyerId, sellerId);
+	    }
     }
 	
 	private void lookup(String product_name, int hopcount) {
-		System.out.println("Called lookup in the peer "+ this.node_id);
+		System.out.println("Peer:"+this.node_id+" In lookup");
 		if(hopcount>0) {
 			for(int i= 0; i<this.peers.length;i++) {
 				int neighbour_peer = peers[i];
-				//Get associated port and ip address of the <neighbour_peer>
+				//TODO: Get associated port and ip address of the <neighbour_peer>
 				String neighbour_ip = "127.0.0.1";
 				int neighbour_port = 8004;
 				try {
@@ -121,8 +127,9 @@ public class Node implements Hello {
 	}
 	
 	private void reply(int buyerId, int sellerId) {
-		System.out.println("In reply of peer "+ this.node_id);
+		System.out.println("Peer:"+this.node_id+" In reply");
 		try{
+			//TODO: get the values dynamically
 			String neighbour_ip = "127.0.0.1";
 			int neighbour_port = 8003;
 		    Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
@@ -138,7 +145,7 @@ public class Node implements Hello {
 	public void start() {
 		if(this.role == "buyer"){
 			int i = 0;
-			while(i!=1){
+			while(i!=8){
 //				if (this.item == "") {
 //					int rnd = new Random().nextInt(this.items.length);
 //				    this.item = this.items[rnd];
@@ -146,14 +153,17 @@ public class Node implements Hello {
 //				//TODO: take the variable hopcount as input and check if it is greater than zero..If yes, call lookup
 //				//TODO: remove the hardcoding
 //				this.item = "Salt";
-				this.lookup(this.item, 1);
+				this.lookup(this.item, this.node_id);
+				if(this.sellerId !=-1) {
+					this.buy(sellerId);
+				}
 				i+=1;
 			}
 		}
 		if(this.role == "seller") {
 			//TODO
 			System.out.println("Now Starting the seller");
-			this.item = "Salt";
+//			this.item = "Salt";
 		}
 	}
 	
