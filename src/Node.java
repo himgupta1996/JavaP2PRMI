@@ -138,7 +138,6 @@ public class Node implements Hello {
 					Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
 					Hello stub = (Hello) registry.lookup(String.valueOf(neighbour_peer));
 					stub.lookup_helper(product_name, hopcount-1, this.node_id);
-					
 				}
 				catch(Exception e) {
 					System.err.println("Client exception: " + e.toString()); 
