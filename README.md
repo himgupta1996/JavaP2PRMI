@@ -1,7 +1,7 @@
 # Instructions 
 
 1. Change directory to /src
-2. Execute the run_me file with `python run_me.py`
+2. Execute the run_me testcase file with `python run_me.py`
 
   
  # Expected Output
