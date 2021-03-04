@@ -1,49 +1,141 @@
-1::Wed Mar 03 17:47:04 EST 2021::Logger Initialized
-1::Wed Mar 03 17:47:04 EST 2021::Third Testcase:
-1::Wed Mar 03 17:47:04 EST 2021::Randomly assign buyer and seller roles. Ensure that items keep being sold throughout.
-1::Wed Mar 03 17:47:04 EST 2021::Peer 0 ready
-1::Wed Mar 03 17:47:04 EST 2021::Peer 1 ready
-1::Wed Mar 03 17:47:04 EST 2021::Peer: 0: I want to buy 'Fish'
-1::Wed Mar 03 17:47:04 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
-23::Wed Mar 03 17:47:04 EST 2021::Peer: 1: I don't have 'Fish'. I have 'Boar'
-1::Wed Mar 03 17:47:04 EST 2021::Peer: 0: Couldn't find the item 'Fish'
-1::Wed Mar 03 17:47:07 EST 2021::Peer: 0: I want to buy 'Boar'
-1::Wed Mar 03 17:47:07 EST 2021::Peer: 0: Looking up 'Boar' in my neighbour peers.
-23::Wed Mar 03 17:47:07 EST 2021::Peer:1: I have 5 items of 'Boar'
-1::Wed Mar 03 17:47:07 EST 2021::Peer: 0: I found my seller in peer 1
-1::Wed Mar 03 17:47:07 EST 2021::Peer: 0: Buying 'Boar' from peer 1
-1::Wed Mar 03 17:47:07 EST 2021::Peer: 0: Successfully bought 'Boar' from 1
-1::Wed Mar 03 17:47:10 EST 2021::Peer: 0: I want to buy 'Salt'
-1::Wed Mar 03 17:47:10 EST 2021::Peer: 0: Looking up 'Salt' in my neighbour peers.
-23::Wed Mar 03 17:47:10 EST 2021::Peer: 1: I don't have 'Salt'. I have 'Boar'
-1::Wed Mar 03 17:47:10 EST 2021::Peer: 0: Couldn't find the item 'Salt'
-1::Wed Mar 03 17:47:13 EST 2021::Peer: 0: I want to buy 'Fish'
-1::Wed Mar 03 17:47:13 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
-23::Wed Mar 03 17:47:13 EST 2021::Peer: 1: I don't have 'Fish'. I have 'Boar'
-1::Wed Mar 03 17:47:13 EST 2021::Peer: 0: Couldn't find the item 'Fish'
-1::Wed Mar 03 17:47:16 EST 2021::Peer: 0: I want to buy 'Fish'
-1::Wed Mar 03 17:47:16 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
-23::Wed Mar 03 17:47:16 EST 2021::Peer: 1: I don't have 'Fish'. I have 'Boar'
-1::Wed Mar 03 17:47:16 EST 2021::Peer: 0: Couldn't find the item 'Fish'
-1::Wed Mar 03 17:47:19 EST 2021::Peer: 0: I want to buy 'Salt'
-1::Wed Mar 03 17:47:19 EST 2021::Peer: 0: Looking up 'Salt' in my neighbour peers.
-23::Wed Mar 03 17:47:19 EST 2021::Peer: 1: I don't have 'Salt'. I have 'Boar'
-1::Wed Mar 03 17:47:19 EST 2021::Peer: 0: Couldn't find the item 'Salt'
-1::Wed Mar 03 17:47:22 EST 2021::Peer: 0: I want to buy 'Fish'
-1::Wed Mar 03 17:47:22 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
-23::Wed Mar 03 17:47:22 EST 2021::Peer: 1: I don't have 'Fish'. I have 'Boar'
-1::Wed Mar 03 17:47:22 EST 2021::Peer: 0: Couldn't find the item 'Fish'
-1::Wed Mar 03 17:47:25 EST 2021::Peer: 0: I want to buy 'Salt'
-1::Wed Mar 03 17:47:25 EST 2021::Peer: 0: Looking up 'Salt' in my neighbour peers.
-23::Wed Mar 03 17:47:25 EST 2021::Peer: 1: I don't have 'Salt'. I have 'Boar'
-1::Wed Mar 03 17:47:25 EST 2021::Peer: 0: Couldn't find the item 'Salt'
-1::Wed Mar 03 17:47:28 EST 2021::Peer: 0: I want to buy 'Salt'
-1::Wed Mar 03 17:47:28 EST 2021::Peer: 0: Looking up 'Salt' in my neighbour peers.
-23::Wed Mar 03 17:47:28 EST 2021::Peer: 1: I don't have 'Salt'. I have 'Boar'
-1::Wed Mar 03 17:47:28 EST 2021::Peer: 0: Couldn't find the item 'Salt'
-1::Wed Mar 03 17:47:31 EST 2021::Peer: 0: I want to buy 'Boar'
-1::Wed Mar 03 17:47:31 EST 2021::Peer: 0: Looking up 'Boar' in my neighbour peers.
-23::Wed Mar 03 17:47:31 EST 2021::Peer:1: I have 4 items of 'Boar'
-1::Wed Mar 03 17:47:31 EST 2021::Peer: 0: I found my seller in peer 1
-1::Wed Mar 03 17:47:31 EST 2021::Peer: 0: Buying 'Boar' from peer 1
-1::Wed Mar 03 17:47:31 EST 2021::Peer: 0: Successfully bought 'Boar' from 1
+1::Wed Mar 03 20:39:01 EST 2021::Logger Initialized
+1::Wed Mar 03 20:39:02 EST 2021::Third Testcase:
+1::Wed Mar 03 20:39:02 EST 2021::Randomly assign buyer and seller roles. Ensure that items keep being sold throughout.
+1::Wed Mar 03 20:39:02 EST 2021::Peer 0 ready
+1::Wed Mar 03 20:39:02 EST 2021::Peer 1 ready
+1::Wed Mar 03 20:39:02 EST 2021::Peer: 0: I want to buy 'Boar'
+1::Wed Mar 03 20:39:02 EST 2021::Peer: 0: Looking up 'Boar' in my neighbour peers.
+22::Wed Mar 03 20:39:02 EST 2021::Peer: 1: I don't have 'Boar'. I have 'Fish'
+1::Wed Mar 03 20:39:02 EST 2021::Peer: 0: Couldn't find the item 'Boar'
+1::Wed Mar 03 20:39:03 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 20:39:03 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+22::Wed Mar 03 20:39:03 EST 2021::Peer:1: I have 5 items of 'Fish'
+1::Wed Mar 03 20:39:03 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 20:39:03 EST 2021::Peer: 0: Buying 'Fish' from peer 1
+1::Wed Mar 03 20:39:03 EST 2021::Peer: 0: Successfully bought 'Fish' from 1
+1::Wed Mar 03 20:39:04 EST 2021::Peer: 0: I want to buy 'Boar'
+1::Wed Mar 03 20:39:04 EST 2021::Peer: 0: Looking up 'Boar' in my neighbour peers.
+22::Wed Mar 03 20:39:04 EST 2021::Peer: 1: I don't have 'Boar'. I have 'Fish'
+1::Wed Mar 03 20:39:04 EST 2021::Peer: 0: Couldn't find the item 'Boar'
+1::Wed Mar 03 20:39:05 EST 2021::Peer: 0: I want to buy 'Salt'
+1::Wed Mar 03 20:39:05 EST 2021::Peer: 0: Looking up 'Salt' in my neighbour peers.
+22::Wed Mar 03 20:39:05 EST 2021::Peer: 1: I don't have 'Salt'. I have 'Fish'
+1::Wed Mar 03 20:39:05 EST 2021::Peer: 0: Couldn't find the item 'Salt'
+1::Wed Mar 03 20:39:06 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 20:39:06 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+22::Wed Mar 03 20:39:06 EST 2021::Peer:1: I have 4 items of 'Fish'
+1::Wed Mar 03 20:39:06 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 20:39:06 EST 2021::Peer: 0: Buying 'Fish' from peer 1
+1::Wed Mar 03 20:39:06 EST 2021::Peer: 0: Successfully bought 'Fish' from 1
+1::Wed Mar 03 20:39:07 EST 2021::Peer: 0: I want to buy 'Salt'
+1::Wed Mar 03 20:39:07 EST 2021::Peer: 0: Looking up 'Salt' in my neighbour peers.
+22::Wed Mar 03 20:39:07 EST 2021::Peer: 1: I don't have 'Salt'. I have 'Fish'
+1::Wed Mar 03 20:39:07 EST 2021::Peer: 0: Couldn't find the item 'Salt'
+1::Wed Mar 03 20:39:08 EST 2021::Peer: 0: I want to buy 'Salt'
+1::Wed Mar 03 20:39:08 EST 2021::Peer: 0: Looking up 'Salt' in my neighbour peers.
+22::Wed Mar 03 20:39:08 EST 2021::Peer: 1: I don't have 'Salt'. I have 'Fish'
+1::Wed Mar 03 20:39:08 EST 2021::Peer: 0: Couldn't find the item 'Salt'
+1::Wed Mar 03 20:39:09 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 20:39:09 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+22::Wed Mar 03 20:39:09 EST 2021::Peer:1: I have 3 items of 'Fish'
+1::Wed Mar 03 20:39:09 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 20:39:09 EST 2021::Peer: 0: Buying 'Fish' from peer 1
+1::Wed Mar 03 20:39:09 EST 2021::Peer: 0: Successfully bought 'Fish' from 1
+1::Wed Mar 03 20:39:10 EST 2021::Peer: 0: I want to buy 'Boar'
+1::Wed Mar 03 20:39:10 EST 2021::Peer: 0: Looking up 'Boar' in my neighbour peers.
+22::Wed Mar 03 20:39:10 EST 2021::Peer: 1: I don't have 'Boar'. I have 'Fish'
+1::Wed Mar 03 20:39:10 EST 2021::Peer: 0: Couldn't find the item 'Boar'
+1::Wed Mar 03 20:39:11 EST 2021::Peer: 0: I want to buy 'Boar'
+1::Wed Mar 03 20:39:11 EST 2021::Peer: 0: Looking up 'Boar' in my neighbour peers.
+22::Wed Mar 03 20:39:11 EST 2021::Peer: 1: I don't have 'Boar'. I have 'Fish'
+1::Wed Mar 03 20:39:11 EST 2021::Peer: 0: Couldn't find the item 'Boar'
+1::Wed Mar 03 20:39:12 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 20:39:12 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+22::Wed Mar 03 20:39:12 EST 2021::Peer:1: I have 2 items of 'Fish'
+1::Wed Mar 03 20:39:12 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 20:39:12 EST 2021::Peer: 0: Buying 'Fish' from peer 1
+1::Wed Mar 03 20:39:12 EST 2021::Peer: 0: Successfully bought 'Fish' from 1
+1::Wed Mar 03 20:39:13 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 20:39:13 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+22::Wed Mar 03 20:39:13 EST 2021::Peer:1: I have 1 items of 'Fish'
+1::Wed Mar 03 20:39:13 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 20:39:13 EST 2021::Peer: 0: Buying 'Fish' from peer 1
+1::Wed Mar 03 20:39:13 EST 2021::Peer: 0: Successfully bought 'Fish' from 1
+1::Wed Mar 03 20:39:14 EST 2021::Peer: 0: I want to buy 'Salt'
+1::Wed Mar 03 20:39:14 EST 2021::Peer: 0: Looking up 'Salt' in my neighbour peers.
+22::Wed Mar 03 20:39:14 EST 2021::Peer: 1: I don't have 'Salt'. I have 'Fish'
+1::Wed Mar 03 20:39:14 EST 2021::Peer: 0: Couldn't find the item 'Salt'
+1::Wed Mar 03 20:39:15 EST 2021::Peer: 0: I want to buy 'Boar'
+1::Wed Mar 03 20:39:15 EST 2021::Peer: 0: Looking up 'Boar' in my neighbour peers.
+22::Wed Mar 03 20:39:15 EST 2021::Peer: 1: I don't have 'Boar'. I have 'Fish'
+1::Wed Mar 03 20:39:15 EST 2021::Peer: 0: Couldn't find the item 'Boar'
+1::Wed Mar 03 20:39:16 EST 2021::Peer: 0: I want to buy 'Boar'
+1::Wed Mar 03 20:39:16 EST 2021::Peer: 0: Looking up 'Boar' in my neighbour peers.
+22::Wed Mar 03 20:39:16 EST 2021::Peer: 1: I don't have 'Boar'. I have 'Fish'
+1::Wed Mar 03 20:39:16 EST 2021::Peer: 0: Couldn't find the item 'Boar'
+1::Wed Mar 03 20:39:17 EST 2021::Peer: 0: I want to buy 'Salt'
+1::Wed Mar 03 20:39:17 EST 2021::Peer: 0: Looking up 'Salt' in my neighbour peers.
+22::Wed Mar 03 20:39:17 EST 2021::Peer: 1: I don't have 'Salt'. I have 'Fish'
+1::Wed Mar 03 20:39:17 EST 2021::Peer: 0: Couldn't find the item 'Salt'
+1::Wed Mar 03 20:39:18 EST 2021::Peer: 0: I want to buy 'Salt'
+1::Wed Mar 03 20:39:18 EST 2021::Peer: 0: Looking up 'Salt' in my neighbour peers.
+22::Wed Mar 03 20:39:18 EST 2021::Peer: 1: I don't have 'Salt'. I have 'Fish'
+1::Wed Mar 03 20:39:18 EST 2021::Peer: 0: Couldn't find the item 'Salt'
+1::Wed Mar 03 20:39:19 EST 2021::Peer: 0: I want to buy 'Boar'
+1::Wed Mar 03 20:39:19 EST 2021::Peer: 0: Looking up 'Boar' in my neighbour peers.
+22::Wed Mar 03 20:39:19 EST 2021::Peer: 1: I don't have 'Boar'. I have 'Fish'
+1::Wed Mar 03 20:39:19 EST 2021::Peer: 0: Couldn't find the item 'Boar'
+1::Wed Mar 03 20:39:20 EST 2021::Peer: 0: I want to buy 'Salt'
+1::Wed Mar 03 20:39:20 EST 2021::Peer: 0: Looking up 'Salt' in my neighbour peers.
+22::Wed Mar 03 20:39:20 EST 2021::Peer: 1: I don't have 'Salt'. I have 'Fish'
+1::Wed Mar 03 20:39:20 EST 2021::Peer: 0: Couldn't find the item 'Salt'
+1::Wed Mar 03 20:39:21 EST 2021::Peer: 0: I want to buy 'Boar'
+1::Wed Mar 03 20:39:21 EST 2021::Peer: 0: Looking up 'Boar' in my neighbour peers.
+22::Wed Mar 03 20:39:21 EST 2021::Peer: 1: I don't have 'Boar'. I have 'Fish'
+1::Wed Mar 03 20:39:21 EST 2021::Peer: 0: Couldn't find the item 'Boar'
+1::Wed Mar 03 20:39:22 EST 2021::Peer: 0: I want to buy 'Boar'
+1::Wed Mar 03 20:39:22 EST 2021::Peer: 0: Looking up 'Boar' in my neighbour peers.
+22::Wed Mar 03 20:39:22 EST 2021::Peer: 1: I don't have 'Boar'. I have 'Fish'
+1::Wed Mar 03 20:39:22 EST 2021::Peer: 0: Couldn't find the item 'Boar'
+1::Wed Mar 03 20:39:23 EST 2021::Peer: 0: I want to buy 'Salt'
+1::Wed Mar 03 20:39:23 EST 2021::Peer: 0: Looking up 'Salt' in my neighbour peers.
+22::Wed Mar 03 20:39:23 EST 2021::Peer: 1: I don't have 'Salt'. I have 'Fish'
+1::Wed Mar 03 20:39:23 EST 2021::Peer: 0: Couldn't find the item 'Salt'
+1::Wed Mar 03 20:39:24 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 20:39:24 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+22::Wed Mar 03 20:39:24 EST 2021::Peer:1: My items are finished. Restocking them.
+1::Wed Mar 03 20:39:24 EST 2021::Peer: 0: Couldn't find the item 'Fish'
+1::Wed Mar 03 20:39:25 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 20:39:25 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+22::Wed Mar 03 20:39:25 EST 2021::Peer: 1: I don't have 'Fish'. I have 'Boar'
+1::Wed Mar 03 20:39:25 EST 2021::Peer: 0: Couldn't find the item 'Fish'
+1::Wed Mar 03 20:39:26 EST 2021::Peer: 0: I want to buy 'Salt'
+1::Wed Mar 03 20:39:26 EST 2021::Peer: 0: Looking up 'Salt' in my neighbour peers.
+22::Wed Mar 03 20:39:26 EST 2021::Peer: 1: I don't have 'Salt'. I have 'Boar'
+1::Wed Mar 03 20:39:26 EST 2021::Peer: 0: Couldn't find the item 'Salt'
+1::Wed Mar 03 20:39:27 EST 2021::Peer: 0: I want to buy 'Fish'
+1::Wed Mar 03 20:39:27 EST 2021::Peer: 0: Looking up 'Fish' in my neighbour peers.
+22::Wed Mar 03 20:39:27 EST 2021::Peer: 1: I don't have 'Fish'. I have 'Boar'
+1::Wed Mar 03 20:39:27 EST 2021::Peer: 0: Couldn't find the item 'Fish'
+1::Wed Mar 03 20:39:28 EST 2021::Peer: 0: I want to buy 'Boar'
+1::Wed Mar 03 20:39:28 EST 2021::Peer: 0: Looking up 'Boar' in my neighbour peers.
+22::Wed Mar 03 20:39:28 EST 2021::Peer:1: I have 5 items of 'Boar'
+1::Wed Mar 03 20:39:28 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 20:39:28 EST 2021::Peer: 0: Buying 'Boar' from peer 1
+1::Wed Mar 03 20:39:28 EST 2021::Peer: 0: Successfully bought 'Boar' from 1
+1::Wed Mar 03 20:39:29 EST 2021::Peer: 0: I want to buy 'Boar'
+1::Wed Mar 03 20:39:29 EST 2021::Peer: 0: Looking up 'Boar' in my neighbour peers.
+22::Wed Mar 03 20:39:29 EST 2021::Peer:1: I have 4 items of 'Boar'
+1::Wed Mar 03 20:39:29 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 20:39:29 EST 2021::Peer: 0: Buying 'Boar' from peer 1
+1::Wed Mar 03 20:39:29 EST 2021::Peer: 0: Successfully bought 'Boar' from 1
+1::Wed Mar 03 20:39:30 EST 2021::Peer: 0: I want to buy 'Salt'
+1::Wed Mar 03 20:39:30 EST 2021::Peer: 0: Looking up 'Salt' in my neighbour peers.
+22::Wed Mar 03 20:39:30 EST 2021::Peer: 1: I don't have 'Salt'. I have 'Boar'
+1::Wed Mar 03 20:39:30 EST 2021::Peer: 0: Couldn't find the item 'Salt'
+1::Wed Mar 03 20:39:31 EST 2021::Peer: 0: I want to buy 'Boar'
+1::Wed Mar 03 20:39:31 EST 2021::Peer: 0: Looking up 'Boar' in my neighbour peers.
+22::Wed Mar 03 20:39:31 EST 2021::Peer:1: I have 3 items of 'Boar'
+1::Wed Mar 03 20:39:31 EST 2021::Peer: 0: I found my seller in peer 1
+1::Wed Mar 03 20:39:31 EST 2021::Peer: 0: Buying 'Boar' from peer 1
+1::Wed Mar 03 20:39:31 EST 2021::Peer: 0: Successfully bought 'Boar' from 1

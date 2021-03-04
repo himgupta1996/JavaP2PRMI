@@ -6,10 +6,6 @@ public class MyFormatter extends Formatter {
 
     @Override
     public String format(LogRecord record) {
-//        return record.getThreadID()+"::"+record.getSourceClassName()+"::"
-//                +record.getSourceMethodName()+"::"
-//                +new Date(record.getMillis())+"::"
-//                +record.getMessage()+"\n";
     	return record.getThreadID()+"::"
         +new Date(record.getMillis())+"::"
         +record.getMessage()+"\n";

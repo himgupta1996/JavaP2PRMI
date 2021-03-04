@@ -7,6 +7,8 @@ import java.util.logging.*;
 
 public class Initializer {
 	static {
+		// Initializing the config Hashmap once the class loads from the config file
+		// config_lookup is a static variable of the Node class which is used to lookup port number and the corresponding ip for a given node
 		try {
 			File config = new File("config.txt");
 			Scanner configScanner = new Scanner(config);
@@ -29,6 +31,14 @@ public class Initializer {
 		Logger logger = Logger.getLogger("MyLog");
 		FileHandler fh;
 		
+		/*  Arguments passed to this class represent the test case which is being executed
+			1 corresponds to Testcase 1 (Refer to the Testcase document for further details)
+		 	2 corresponds to Testcase 2 (Refer to the Testcase document for further details)
+		 	3 corresponds to Testcase 3 (Refer to the Testcase document for further details)
+		   	Based upon the passed argument, peers and the corresponding P2P network is initialized */
+		
+		
+		//Testcase 1
 		if (args[0].equals("1")) {
 			String filename = "testcase1.log";
 			Network network = new Network();
@@ -77,6 +87,7 @@ public class Initializer {
 			}
 		}
 		
+		//Testcase 2
 		if (args[0].equals("2")) {
 			
 			String filename = "testcase2.log";
@@ -126,6 +137,7 @@ public class Initializer {
 			
 		}
 		
+		//Testcase 3
 		if (args[0].equals("3")) {
 			String filename = "testcase3.log";
 			Network network = new Network();

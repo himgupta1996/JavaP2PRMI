@@ -3,7 +3,11 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.*;
 import java.util.logging.*;
+
+//Peer Node class implementation
 public class Node implements Hello {
+	
+	//declaring peer local variables
 	public String role;
 	public int node_id;
 	public int port_id;
@@ -18,6 +22,8 @@ public class Node implements Hello {
 	private int hopcount = 1;
 	public static HashMap<Integer, String[]> config_lookup = new HashMap<Integer, String[]>();
 	
+	//Peer Constructor. Initializing the local variables
+	//Starting the RMI registry and binding the peer stub to it
 	public Node(int node_id, String role,  int port_id, String item, int[] peers, int testcase, Logger logger) {
 		this.role = role;
 		this.node_id = node_id;
@@ -43,10 +49,8 @@ public class Node implements Hello {
 	    }
 	}
 	
+	//function to check the item availability, forwarding lookup request, and reply back to the buyer with the seller Id
 	public void lookup_helper(String productname, int hopcount, int buyerId) {
-		System.out.println("Peer:"+this.node_id+" In lookup_helper");
-		
-		System.out.println("I have "+this.m+" items of "+this.item);
 		
 		if(this.role.equals("seller")) {
 			if(productname.equals(this.item)) {
@@ -55,7 +59,7 @@ public class Node implements Hello {
 					this.reply(buyerId, this.node_id);
 				}
 				else if(this.m == 0) {
-					System.out.println("Peer:"+this.node_id+": My items are finished. Restocking them.");
+					
 					logger.info("Peer:"+this.node_id+": My items are finished. Restocking them.");
 					this.m = max_sell_items;
 					if(this.testcase==1) {
@@ -80,26 +84,26 @@ public class Node implements Hello {
 		}
 		   
 	   }
-	   
+	
+	//if seller: decrements the stock item
+	//if buyer: buys a particular item from the specified Seller
     public void buy(int sellerId) {
-	    System.out.println("Peer:"+this.node_id+" In Buy.");
+
 	    if(this.role.equals("seller")) {
 		    this.m-=1;
 	    }
 	    else {
-	    	System.out.println("Peer: "+ this.node_id + ": I found my seller in peer "+ sellerId);
-	    	System.out.println("Going to buy it");
+
 	    	logger.info("Peer: "+ this.node_id + ": I found my seller in peer "+ sellerId);
 	    	try {
 	    		logger.info("Peer: "+ this.node_id +": Buying '"+this.item+ "' from peer "+sellerId);
-	    		//TODO: get the seller port Id and Ip address from the configuration file
-	    		String neighbour_ip = Node.config_lookup.get(sellerId)[1]; //sellerid
-				int neighbour_port = 8004;
+	    		String neighbour_ip = Node.config_lookup.get(sellerId)[1];
+				int neighbour_port = Integer.parseInt(config_lookup.get(sellerId)[0]);
 				Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
 				Hello stub = (Hello) registry.lookup(String.valueOf(sellerId));
 				stub.buy(this.node_id);	
-				System.out.println("Peer: "+ this.node_id +": Successfully completed the transaction");
 				logger.info("Peer: "+this.node_id+ ": Successfully bought '"+ this.item + "' from "+sellerId);
+				
 				this.sellerId = -1;
 			}
 			catch(Exception e) {
@@ -109,9 +113,10 @@ public class Node implements Hello {
 	    }
 	   
     }
-	   
+	
+    //A helper function to reply back to the peer from where the request originated
     public void reply_helper(int buyerId, int sellerId) {
-	    System.out.println("Peer:"+this.node_id+" In reply_helper");
+
 	    if(buyerId == this.node_id) {
 	    	this.sellerId = sellerId;
 	    }
@@ -120,15 +125,15 @@ public class Node implements Hello {
 	    }
     }
 	
+    //To forward a lookup request to all the neighboring peers with the item buyer wants to buy
 	private void lookup(String product_name, int hopcount) {
-		System.out.println("Peer:"+this.node_id+" In lookup");
+
 		logger.info("Peer: "+this.node_id+": Looking up '"+product_name+ "' in my neighbour peers.");
 		if(hopcount>0) {
 			for(int i= 0; i<this.peers.length;i++) {
 				int neighbour_peer = peers[i];
-				//TODO: Get associated port and ip address of the <neighbour_peer>
-				String neighbour_ip = "127.0.0.1"; //peers[i]
-				int neighbour_port = 8004;
+				String neighbour_ip = Node.config_lookup.get(peers[i])[1];
+				int neighbour_port = Integer.parseInt(Node.config_lookup.get(peers[i])[0]);
 				try {
 					Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
 					Hello stub = (Hello) registry.lookup(String.valueOf(neighbour_peer));
@@ -137,19 +142,19 @@ public class Node implements Hello {
 				}
 				catch(Exception e) {
 					System.err.println("Client exception: " + e.toString()); 
-			        e.printStackTrace();
+					System.err.println("Peer: "+this.node_id+": Not able to contact the peer "+neighbour_peer);
 				}
 				
 			}
 		}
 	}
 	
+	//To trace back the request of buyer by calling the public interface of the peer from which the request was passed
 	private void reply(int buyerId, int sellerId) {
-		System.out.println("Peer:"+this.node_id+" In reply");
+
 		try{
-			//TODO: get the values dynamically
-			String neighbour_ip = "127.0.0.1"; //buyerId
-			int neighbour_port = 8003;
+			String neighbour_ip = Node.config_lookup.get(buyerId)[1];
+			int neighbour_port = Integer.parseInt(Node.config_lookup.get(buyerId)[0]);
 		    Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
 			Hello stub = (Hello) registry.lookup(String.valueOf(buyerId));
 			stub.reply_helper(buyerId, sellerId);
@@ -160,9 +165,11 @@ public class Node implements Hello {
 		}
 	}
 	
+	//Initiating the peer to start buying or selling
 	public void start() {
 		if(this.role == "buyer"){
-			while(true){			
+			while(true){
+				
 				if(this.testcase == 1 || this.testcase == 2) {
 					this.item = "Fish";
 				}
@@ -171,7 +178,6 @@ public class Node implements Hello {
 				    this.item = this.items[rnd];
 				}
 
-			    System.out.println("Peer: "+this.node_id+ ": I want to buy "+ this.item);
 			    logger.info("Peer: "+this.node_id+ ": I want to buy '"+ this.item+"'");
 				this.lookup(this.item, this.hopcount);
 				if(this.sellerId !=-1) {
@@ -181,7 +187,7 @@ public class Node implements Hello {
 					logger.info("Peer: "+this.node_id+ ": Couldn't find the item '"+ this.item+"'");
 				}
 				try {
-				    Thread.sleep(3 * 1000);
+				    Thread.sleep(1 * 1000);
 				} catch (InterruptedException ie) {
 				    Thread.currentThread().interrupt();
 				}

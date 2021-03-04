@@ -2,8 +2,10 @@ import java.util.HashMap;
 
 public class Network {
 	HashMap<Integer, int[]> p2p = new HashMap<Integer, int[]>();
+	
+	//Initializing the 2 node P2P network
+	//Describes which peer is connected to which peers
 	public Network() {
-		//Read file and get the peers dictionary
 		int[] x0 = {1};
 		int[] x1 = {0};
 		p2p.put(0, x0);
