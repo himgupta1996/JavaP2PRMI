@@ -2,7 +2,7 @@ This repository contains the Milestone 1 implementation of the Lab 1 Project of 
 Contributors - <br>
 Abhishek Lalwani (alalwani@umass.edu) <br>
 Himanshu Gupta (hgupta@umass.edu) <br>
-Kunal Chakraborty (kchakrabarty@umass.edu) <br>
+Kunal Chakrabarty (kchakrabarty@umass.edu) <br>
 
 Please find the instructions below for testing the implementation.
 
