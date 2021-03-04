@@ -18,3 +18,10 @@ Please find the instructions below for testing the implementation.
  2. Once compilation is successful, all testcases are run sequentially.
  3. Each test case runs for approximately 30 seconds, during which the transactions keep happening and seller restocks items when it runs out of them.
  4. In each testcase, all transactions are logged in files separated on the basis of test cases and displayed as output.
+
+ # Java File Description
+ 
+ 1. src/Hello.java: This is a interface file that defines the public function of peer object.
+ 2. src/Node.java: This is a Network Peer file which implements the interface as well as local functions related to the peer.
+ 3. src/Network.java: This file defines the P2P Network.  
+ 4. src/Initializer.java: This file is used to instantiate the peer nodes and make them ready to buy or sell items.
