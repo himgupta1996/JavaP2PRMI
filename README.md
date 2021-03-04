@@ -1,8 +1,8 @@
-This repository contains the Milestone 1 implementation of the Lab 1 Project of 677 course at UMass Amherst.
-Contributors - 
-Abhishek Lalwani (alalwani@umass.edu)
-Himanshu Gupta (hgupta@umass.edu)
-Kunal Chakraborty (kchakrabarty@umass.edu)
+This repository contains the Milestone 1 implementation of the Lab 1 Project of 677 course at UMass Amherst. <br>
+Contributors - <br>
+Abhishek Lalwani (alalwani@umass.edu) <br>
+Himanshu Gupta (hgupta@umass.edu) <br>
+Kunal Chakraborty (kchakrabarty@umass.edu) <br>
 
 Please find the instructions below for testing the implementation.
 
