@@ -9,7 +9,7 @@ Please find the instructions below for testing the implementation.
 # Instructions 
 
 1. Change directory to /src
-2. Execute the run_me testcase file with `python run_me.py`
+2. Execute the run_me testcase file with `python run_me.py` (Make sure you have Java installed on your system).
 
   
  # Expected Output
