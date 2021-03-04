@@ -165,7 +165,7 @@ public class Node implements Hello {
 		}
 	}
 	
-	//Initiating the peer to start buying or selling
+	//Initializing the peer to start buying or selling
 	public void start() {
 		if(this.role == "buyer"){
 			while(true){
