@@ -19,7 +19,7 @@ Please find the instructions below for testing the implementation.
  3. Each test case runs for approximately 30 seconds, during which the transactions keep happening and seller restocks items when it runs out of them.
  4. In each testcase, all transactions are logged in files separated on the basis of test cases and displayed as output.
 
- # Java File Description
+ # Sorce File Descriptions
  
  1. src/Hello.java: This is a interface file that defines the public function of peer object.
  2. src/Node.java: This is a Network Peer file which implements the interface as well as local functions related to the peer.
