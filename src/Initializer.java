@@ -76,10 +76,19 @@ public class Initializer {
 			roles.put(node_id_2, "seller");
 			int port_2 = Integer.parseInt(Node.config_lookup.get(node_id_2)[0]);
 			String ip_2 = Node.config_lookup.get(node_id_2)[1];
-			Node peer_2 = new Node(node_id_2, roles.get(node_id_2), port_2, "Fish", network.get_associated_peer(node_id_2), 1,
+			Node peer_2 = new Node(node_id_2, roles.get(node_id_2), port_2, "Boar", network.get_associated_peer(node_id_2), 1,
 					logger);
 			PeerList.add(peer_2);
-					
+			
+			//Initializing Node 3 (Peer 3)
+			
+			int node_id_3 = 2;
+			roles.put(node_id_3, "buyer");
+			int port_3 = Integer.parseInt(Node.config_lookup.get(node_id_3)[0]);
+			String ip_3 = Node.config_lookup.get(node_id_3)[1];
+			Node peer_3 = new Node(node_id_3, roles.get(node_id_3), port_3, "Boar", network.get_associated_peer(node_id_3), 1,
+					logger);
+			PeerList.add(peer_3);
 			
 			// Starting the peers
 			for (int i = 0; i < PeerList.size(); i++) {
