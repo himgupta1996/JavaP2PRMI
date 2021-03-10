@@ -3,33 +3,31 @@ import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.*;
 import java.util.logging.*;
-import java.io.File;  // Import the File class
-import java.io.FileNotFoundException;  // Import this class to handle errors
-import java.util.Scanner; // Import the Scanner class to read text files
+import java.io.File;
+import java.io.FileNotFoundException;
 
 //Peer Node class implementation
 public class Node implements Hello {
 	
 	//declaring peer local variables
-	public String role;
-	public int node_id;
-	public int port_id;
+	private String role;
+	private int node_id;
+	private int port_id;
 	private int max_sell_items = 5;
 	private int m=5;
 	private String item;
-	String items[] = {"Boar", "Salt", "Fish"};
+	private String items[] = {"Boar", "Salt", "Fish"};
 	private int[] peers;
+	private int testcase;
+	private Logger logger;
+	private int hopcount = 3;
+	public static HashMap<Integer, String[]> config_lookup = new HashMap<Integer, String[]>();
 	
 	//List of the sellers buyer gets after the full lookup
 	private ArrayList<Integer> sellers = new ArrayList<Integer>();
 	
 	//List of the buyers, mostly including only the self node Id
 	private ArrayList<Integer> buyers = new ArrayList<Integer>();
-	
-	private int testcase;
-	private Logger logger;
-	private int hopcount = 3;
-	public static HashMap<Integer, String[]> config_lookup = new HashMap<Integer, String[]>();
 	
 	//Peer Constructor. Initializing the local variables
 	//Starting the RMI registry and binding the peer stub to it
@@ -41,9 +39,9 @@ public class Node implements Hello {
 		this.peers = peers;
 		this.testcase = testcase;
 		this.logger = logger;
-		this.max_sell_items=max_sell_items;
+        this.max_sell_items=max_sell_items;
 		this.buyers.add(this.node_id);
-		// TODO: RANDOMLY INITIALIZE 
+
 		try { 	    
 	         // Exporting the object of implementation class  
 	         // (here we are exporting the remote object to the stub) 
@@ -127,10 +125,21 @@ public class Node implements Hello {
 	
 	//if seller: decrements the stock item
 	//if buyer: buys a particular item from the specified Seller
-    public void buy(int sellerId) {
+    public boolean buy(int sellerId) {
 
 	    if(this.role.equals("seller")) {
-		    this.m-=1;
+	    	//TODO: logic to handle synchronization
+	    	if(this.m == 0) {
+	    		//this happens when another buyer consumed the item
+	    		logger.info("Peer: "+ this.node_id +": Sorry, I sold my item to someone else. You are late.");
+	    		
+	    		return false;
+	    	}
+	    	else {
+	    		this.m-=1;
+	    		return true;
+	    	}
+		    
 	    }
 	    else {
 
@@ -141,18 +150,21 @@ public class Node implements Hello {
 				int neighbour_port = Integer.parseInt(config_lookup.get(sellerId)[0]);
 				Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
 				Hello stub = (Hello) registry.lookup(String.valueOf(sellerId));
-				stub.buy(this.node_id);	
-				logger.info("Peer: "+this.node_id+ ": Successfully bought '"+ this.item + "' from "+sellerId);
+				boolean bought = stub.buy(this.node_id);
+				return bought;
+//				logger.info("Peer: "+this.node_id+ ": Successfully bought '"+ this.item + "' from "+sellerId);
 				
 				//Successfully bought the item, Now clearing the sellers before going for next buy
-				this.sellers.clear();
+//				this.sellers.clear();
 			}
 			catch(Exception e) {
 				logger.info("Peer: "+ this.node_id +": Couldn't connect to peer "+sellerId+ " to buy.");
 				System.err.println("Client exception: " + e.toString()); 
-		        e.printStackTrace();
+//		        e.printStackTrace();
+				return false;
 			}
 	    }
+//	    return true;
 	   
     }
 	
@@ -231,7 +243,16 @@ public class Node implements Hello {
 				else {
 					//choosing a seller randomly out of all the sellers who responded
 					int rnd_seller = new Random().nextInt(this.sellers.size());
-					this.buy(this.sellers.get(rnd_seller));
+					boolean bought = this.buy(this.sellers.get(rnd_seller));
+					if(bought) {
+						logger.info("Peer: "+this.node_id+ ": Successfully bought '"+ this.item + "' from "+this.sellers.get(rnd_seller));
+						//Clearing all sellers
+						this.sellers.clear();
+					}
+					else {
+						logger.info("Peer: "+this.node_id+ ": Couldn't buy '"+ this.item + "' from "+this.sellers.get(rnd_seller));
+					}
+					
 				
 				}
 				
@@ -250,8 +271,7 @@ public class Node implements Hello {
 		config_lookup = config_lookup_value;
 		
 	}
-
-	public static void main(String[] args){
+    public static void main(String[] args){
 		// int node_id, String role,  int port_id, String item, int[] peers, int testcase, Logger logger
 		String node_id=args[0];
 		String role;
@@ -323,6 +343,4 @@ public class Node implements Hello {
 		Node a=new Node(Integer.valueOf(node_id),role, port_id, "boar", PeerList, 0,logger,max_items);
 		a.start();
 	}
-	
 }
-
