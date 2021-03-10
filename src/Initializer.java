@@ -14,18 +14,9 @@ public class Initializer {
 		try {
 			File config = new File("config.txt");
 			Scanner configScanner = new Scanner(config);
-			HashMap<Integer, String[]> config_lookup_value = new HashMap<Integer, String[]>();
 			String[] first_data = configScanner.nextLine().split(" ", 2);;
 			N = Integer.parseInt(first_data[0]);
 			K = Integer.parseInt(first_data[1]);
-			while (configScanner.hasNextLine()) {
-
-				String data = configScanner.nextLine();
-				String[] node_info = data.split(" ", 3);
-				int node_id = Integer.parseInt(node_info[0]);
-				config_lookup_value.put(node_id, new String[] { node_info[1], node_info[2] });
-			}
-			Node.config_lookup_initialize(config_lookup_value);
 			configScanner.close();
 		} catch (FileNotFoundException e) {
 			System.out.println("An error occurred.");

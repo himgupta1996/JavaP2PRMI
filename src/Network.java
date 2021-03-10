@@ -91,7 +91,7 @@ public class Network {
 			/* One seller of boar, 3 buyers of boars, the remaining peers have no role.
 			 * 0 -> seller of boar
 			 * 1,2,3 -> buyer of boar
-			 * 4,5 -> no role (initializing as buyers of other objects to maintain the structure of initialization)
+			 * 4,5 -> no role (initializing as sellers of other objects to maintain the structure of initialization)
 			*/
 
 			p2p.put(0, Arrays.asList(4,5));
@@ -115,9 +115,9 @@ public class Network {
 	            bf.newLine(); 
 	            bf.write(3 + " "+ p2p.get(3).toString().replaceAll("\\s", "") + " " + "buyer" + " " + "Boar");
 	            bf.newLine(); 
-	            bf.write(4 + " "+ p2p.get(4).toString().replaceAll("\\s", "") + " " + "buyer" + " " + "Fish");
+	            bf.write(4 + " "+ p2p.get(4).toString().replaceAll("\\s", "") + " " + "seller" + " " + "Fish" + " " + 5);
 	            bf.newLine(); 
-	            bf.write(5 + " "+ p2p.get(5).toString().replaceAll("\\s", "") + " " + "buyer" + " " + "Salt");
+	            bf.write(5 + " "+ p2p.get(5).toString().replaceAll("\\s", "") + " " + "seller" + " " + "Salt" + " " + 5);
                 bf.newLine();
 	  
 	            bf.flush(); 

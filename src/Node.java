@@ -10,43 +10,63 @@ import java.io.FileNotFoundException;
 public class Node implements Hello {
 	
 	//declaring peer local variables
-	private String role;
-	private int node_id;
-	private int port_id;
-	private int max_sell_items = 5;
-	private int m=5;
-	private String item;
-	private String items[] = {"Boar", "Salt", "Fish"};
-	private int[] peers;
-	private int testcase;
-	private Logger logger;
-	private int hopcount = 3;
-	public static HashMap<Integer, String[]> config_lookup = new HashMap<Integer, String[]>();
+	private String role; //Role of the peer
+	private int node_id; //Id of the node
+	private int port_id; //Port Id of the node
+	private int max_sell_items = 5; //Maximum number of items a seller can sell
+	private int m=5; //Current number of items in stock of seller
+	private String item; //Item the peer is buying or selling
+	private String items[] = {"Boar", "Salt", "Fish"}; //Choices of items the peer have to choose for buying and selling
+	private String testcase = "0"; //This defines how to initialize and restock items in a seller and buyer 
+	private int[] peers; //Contains the list of neighboring peers
+	private Logger logger; //For generating logs
+	private int hopcount = 3; //No of hops a request can go after getting initialized from this peer
+	public HashMap<Integer, String[]> config_lookup = new HashMap<Integer, String[]>(); //Stores details about the neighboring peers
+	private ArrayList<Integer> sellers = new ArrayList<Integer>(); //List of the sellers buyer gets after the full lookup
+	private ArrayList<Integer> buyers = new ArrayList<Integer>(); //List of the buyers, mostly including only the self node Id
 	
-	//List of the sellers buyer gets after the full lookup
-	private ArrayList<Integer> sellers = new ArrayList<Integer>();
-	
-	//List of the buyers, mostly including only the self node Id
-	private ArrayList<Integer> buyers = new ArrayList<Integer>();
-	
-	//Peer Constructor. Initializing the local variables
-	//Starting the RMI registry and binding the peer stub to it
-	public Node(int node_id, String role,  int port_id, String item, int[] peers, int testcase, Logger logger, int max_sell_items) {
+	/*Peer Constructor. 
+	Initializing the local variables
+	Starting the RMI registry and binding the peer stub to it.
+	Initializing the config hash map of neighbor peers
+	 */
+	public Node(int node_id, String role,  int port_id, String item, int[] peers, Logger logger, int max_sell_items, String testcase) {
 		this.role = role;
 		this.node_id = node_id;
 		this.port_id = port_id;
 		this.item = item;
 		this.peers = peers;
-		this.testcase = testcase;
 		this.logger = logger;
         this.max_sell_items=max_sell_items;
 		this.buyers.add(this.node_id);
+		this.m = max_sell_items;
+		this.testcase = testcase;
 
+		// Initializing the config Hash-map once the class loads from the config file
+		// config_lookup is a variable of the Node class which is used to lookup port number and the corresponding ip for a given node
+		try {
+			File config = new File("config.txt");
+			Scanner configScanner = new Scanner(config);
+			HashMap<Integer, String[]> config_lookup_value = new HashMap<Integer, String[]>();
+			configScanner.nextLine();
+			while (configScanner.hasNextLine()) {
+				String data = configScanner.nextLine();
+				String[] node_info = data.split(" ", 3);
+				config_lookup_value.put(Integer.parseInt(node_info[0]), new String[] { node_info[1], node_info[2] });
+			}
+			this.config_lookup = config_lookup_value;
+			configScanner.close();
+		} catch (FileNotFoundException e) {
+			System.out.println("An error occurred.");
+			e.printStackTrace();
+		}
+		
 		try { 	    
 	         // Exporting the object of implementation class  
 	         // (here we are exporting the remote object to the stub) 
-	         Hello stub = (Hello) UnicastRemoteObject.exportObject(this, 0);  
+			 Hello stub = (Hello) UnicastRemoteObject.exportObject(this, 0);  
 	         
+	         System.out.println("IP1 "+this.port_id+" ready");
 	         Registry registry = LocateRegistry.createRegistry(this.port_id);
 	         
 	         registry.bind(String.valueOf(this.node_id), stub);  
@@ -63,7 +83,7 @@ public class Node implements Hello {
 	
 	//function to check the item availability, forwarding lookup request, and reply back to the buyer with the seller Id
 	public void lookup_helper(String productname, int hopcount, ArrayList<Integer> buyers) {
-		logger.info("Peer: "+ this.node_id +": buyers "+buyers);
+		logger.info("Peer: "+ this.node_id +": The request came through the path: "+buyers);
 		if(this.role.equals("seller") && productname.equals(this.item) && this.m>0) {
 			logger.info("Peer:"+this.node_id+": I have "+this.m+" items of '"+this.item+"'");
 			int last_node_index = buyers.size()-1;
@@ -71,7 +91,7 @@ public class Node implements Hello {
     		buyers.remove(last_node_index);
     		try {
     			logger.info("Peer: "+ this.node_id +": Sending back the reply to "+lastNodeId);
-    			String neighbour_ip = Node.config_lookup.get(lastNodeId)[1];
+    			String neighbour_ip = this.config_lookup.get(lastNodeId)[1];
 				int neighbour_port = Integer.parseInt(config_lookup.get(lastNodeId)[0]);
 				Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
 				Hello stub = (Hello) registry.lookup(String.valueOf(lastNodeId));
@@ -88,8 +108,16 @@ public class Node implements Hello {
 				//Restocking the items
 				logger.info("Peer:"+this.node_id+": My items are finished. Restocking them.");
 				int rnd = new Random().nextInt(this.items.length);
-			    this.item = this.items[rnd];
-			    this.m = max_sell_items; 
+			    //this.item = this.items[rnd];
+				if(this.testcase.equals("1")) {
+					this.item = "Boar";
+					this.m = max_sell_items; 
+				}
+				else if(!this.testcase.equals("2")) {
+					this.item = this.items[rnd];
+					this.m = this.max_sell_items;
+				}
+				
 			}
 			if(hopcount>0){
 				if(this.role.equals("seller")) {
@@ -101,8 +129,8 @@ public class Node implements Hello {
 					logger.info("Peer: "+ this.node_id +": Checking if I can go to "+neighbour_peer+ " to buy.");
 					if(!buyers.contains(neighbour_peer)){
 						logger.info("Peer: "+ this.node_id +": Yes!! I can go to "+neighbour_peer+ " to buy.");
-						String neighbour_ip = Node.config_lookup.get(neighbour_peer)[1];
-						int neighbour_port = Integer.parseInt(Node.config_lookup.get(neighbour_peer)[0]);
+						String neighbour_ip = this.config_lookup.get(neighbour_peer)[1];
+						int neighbour_port = Integer.parseInt(this.config_lookup.get(neighbour_peer)[0]);
 						try {
 							Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
 							Hello stub = (Hello) registry.lookup(String.valueOf(neighbour_peer));
@@ -117,22 +145,20 @@ public class Node implements Hello {
 				}
 			}
 			else {
-				logger.info("Peer: "+this.node_id+": Hopcount is finished.");
+				logger.info("Peer: "+this.node_id+": Hopcount is finished. Can't forward the request to other peers.");
 			}
 		}
 		   
 	}
 	
-	//if seller: decrements the stock item
+	//if seller: decrements the stock item if still left, otherwise state no more able to sell
 	//if buyer: buys a particular item from the specified Seller
     public boolean buy(int sellerId) {
 
 	    if(this.role.equals("seller")) {
-	    	//TODO: logic to handle synchronization
 	    	if(this.m == 0) {
 	    		//this happens when another buyer consumed the item
 	    		logger.info("Peer: "+ this.node_id +": Sorry, I sold my item to someone else. You are late.");
-	    		
 	    		return false;
 	    	}
 	    	else {
@@ -146,25 +172,19 @@ public class Node implements Hello {
 	    	logger.info("Peer: "+ this.node_id +": I found my seller in peer "+sellerId);
 	    	try {
 	    		logger.info("Peer: "+ this.node_id +": Buying '"+this.item+ "' from peer "+sellerId);
-	    		String neighbour_ip = Node.config_lookup.get(sellerId)[1];
+	    		String neighbour_ip = this.config_lookup.get(sellerId)[1];
 				int neighbour_port = Integer.parseInt(config_lookup.get(sellerId)[0]);
 				Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
 				Hello stub = (Hello) registry.lookup(String.valueOf(sellerId));
 				boolean bought = stub.buy(this.node_id);
 				return bought;
-//				logger.info("Peer: "+this.node_id+ ": Successfully bought '"+ this.item + "' from "+sellerId);
-				
-				//Successfully bought the item, Now clearing the sellers before going for next buy
-//				this.sellers.clear();
 			}
 			catch(Exception e) {
 				logger.info("Peer: "+ this.node_id +": Couldn't connect to peer "+sellerId+ " to buy.");
 				System.err.println("Client exception: " + e.toString()); 
-//		        e.printStackTrace();
 				return false;
 			}
 	    }
-//	    return true;
 	   
     }
 	
@@ -181,8 +201,8 @@ public class Node implements Hello {
     		int lastNodeId = trace_back_peers.get(last_node_index);
     		trace_back_peers.remove(last_node_index);
     		try {
-    			logger.info("Peer: "+ this.node_id +": Sending back the reply to "+lastNodeId);
-    			String neighbour_ip = Node.config_lookup.get(lastNodeId)[1];
+//    			logger.info("Peer: "+ this.node_id +": Sending back the reply to "+lastNodeId);
+    			String neighbour_ip = this.config_lookup.get(lastNodeId)[1];
 				int neighbour_port = Integer.parseInt(config_lookup.get(lastNodeId)[0]);
 				Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
 				Hello stub = (Hello) registry.lookup(String.valueOf(lastNodeId));
@@ -202,8 +222,8 @@ public class Node implements Hello {
 		if(hopcount>0) {
 			for(int i= 0; i<this.peers.length;i++) {
 				int neighbour_peer = peers[i];
-				String neighbour_ip = Node.config_lookup.get(peers[i])[1];
-				int neighbour_port = Integer.parseInt(Node.config_lookup.get(peers[i])[0]);
+				String neighbour_ip = this.config_lookup.get(peers[i])[1];
+				int neighbour_port = Integer.parseInt(this.config_lookup.get(peers[i])[0]);
 				try {
 					Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
 					Hello stub = (Hello) registry.lookup(String.valueOf(neighbour_peer));
@@ -225,13 +245,18 @@ public class Node implements Hello {
 	
 	//Initiating the peer to start buying or selling
 	public void start() {
-		if(this.role == "buyer"){
-			int i = 5;
-			while(i>0){
+		logger.info("Peer: "+this.node_id+ ": role: "+this.role);
+		if(this.role.equals("buyer")){
+
+			while(true){
 				//choosing a item randomly to buy
-//				int rnd = new Random().nextInt(this.items.length);
-//			    this.item = this.items[rnd];
-//				this.item = "Boar";
+				if(this.testcase.equals("1")) {
+					this.item = "Boar";
+				}
+				else if(!this.testcase.equals("2")) {
+					int rnd = new Random().nextInt(this.items.length);
+				    this.item = this.items[rnd];
+				}
 
 			    logger.info("Peer: "+this.node_id+ ": I want to buy '"+ this.item+"'");
 				this.lookup(this.item, this.hopcount);
@@ -258,71 +283,77 @@ public class Node implements Hello {
 				
 				//Waiting for 1 second before going for next buy
 				try {
-				    Thread.sleep(1 * 1000);
+				    Thread.sleep(5 * 1000);
 				} catch (InterruptedException ie) {
 				    Thread.currentThread().interrupt();
 				}
-				i--;
 			}
 		}
 	}
 
-	public static void config_lookup_initialize(HashMap<Integer, String[]> config_lookup_value) {
-		config_lookup = config_lookup_value;
-		
-	}
     public static void main(String[] args){
 		// int node_id, String role,  int port_id, String item, int[] peers, int testcase, Logger logger
 		String node_id=args[0];
-		String role;
+		String testcase = args[1];
+		String role="";
 		// ArrayList<Integer> PeerList = new ArrayList<Integer>();
-		Integer[] PeerList;
-		String item;
-		int max_items;
-		int port_id;
+		int[] PeerList= {};
+		String item="";
+		int max_items=0;
+		int port_id=0;
 		// 0 [3,1] seller boar 5
 		
 		try {
 			File network = new File("network.txt");
 			Scanner networkScanner = new Scanner(network);
 			// HashMap<Integer, String[]> config_lookup_value = new HashMap<Integer, String[]>();
+			System.out.println("node_info: 1");
 			while (networkScanner.hasNextLine()) {
+				System.out.println("node_info: 3");
 				String data = networkScanner.nextLine();
 				String[] node_info = data.split(" ");
-				if(node_info[0]!=node_id){
-					continue;
-				}
-				node_info[1]=node_info[1].replace("[","");
-        		node_info[1]=node_info[1].replace("]","");
-				String[] s1=node_info[1].split(",");
-				PeerList=new Integer[s1.length];
-				for (int i = 0; i < s1.length; i++){
-					PeerList[i]=Integer.valueOf(s1[i]);
-				}
+				System.out.println("node_infodsafgsd: "+node_info[0]);
+				if(node_info[0].equals(node_id)){
+					node_info[1]=node_info[1].replace("[","");
+	        		node_info[1]=node_info[1].replace("]","");
+					String[] s1=node_info[1].split(",");
+					PeerList=new int[s1.length];
+					for (int i = 0; i < s1.length; i++){
+						PeerList[i]=Integer.valueOf(s1[i]);
+					}
 
-				role=node_info[2];
-				item=node_info[3];
-				max_items=Integer.valueOf(node_info[4]);
-				break;
+					role=node_info[2];
+					item=node_info[3];
+					if(role.equals("seller")) {
+						max_items=Integer.valueOf(node_info[4]);
+					}
+					
+					break;
+				}
+				
+				
 			}
-			// Node.config_lookup_initialize(config_lookup_value);
-			// configScanner.close();
+			networkScanner.close();
 		} catch (FileNotFoundException e) {
 			System.out.println("An error occurred. File not found.");
 			e.printStackTrace();
 		}
+		System.out.println("node_info: 2");
 
 		try{
+
 			File config= new File("config.txt");
-			Scanner configScanner = new Scanner(network);
-			while (networkScanner.hasNextLine()) {
-				String data = networkScanner.nextLine();
+			Scanner configScanner = new Scanner(config);
+			configScanner.nextLine();
+			while (configScanner.hasNextLine()) {
+				String data = configScanner.nextLine();
 				String[] node_info = data.split(" ");
-				if(node_info[0]!=node_id){
-					continue;
+				if(node_info[0].equals(node_id)){
+					port_id=Integer.valueOf(node_info[1]);
+					break;
 				}
-				port_id=Integer.valueOf(node_info[1]);
-			}	
+			}
+			configScanner.close();
 		} catch (FileNotFoundException e) {
 			System.out.println("An error occurred. File not found.");
 			e.printStackTrace();
@@ -340,7 +371,8 @@ public class Node implements Hello {
 			e.printStackTrace();
 		}
 		
-		Node a=new Node(Integer.valueOf(node_id),role, port_id, "boar", PeerList, 0,logger,max_items);
+		System.out.println("Max item check:"+max_items);
+		Node a=new Node(Integer.valueOf(node_id), role, port_id, item, PeerList,logger,max_items, testcase);
 		a.start();
 	}
 }
