@@ -1,0 +1,121 @@
+1::main::Wed Mar 10 14:25:31 EST 2021::Logger Initialized
+1::<init>::Wed Mar 10 14:25:32 EST 2021::Peer 4 ready
+1::start::Wed Mar 10 14:25:32 EST 2021::Peer: 4: role: seller
+21::lookup_helper::Wed Mar 10 14:25:33 EST 2021::Peer: 4: The request came through the path: [2]
+21::lookup_helper::Wed Mar 10 14:25:33 EST 2021::Peer: 4: I don't have 'Boar'. I have 'Fish'. Forwarding the message to my other peers.
+21::lookup_helper::Wed Mar 10 14:25:33 EST 2021::Peer: 4: Checking if I can go to 0 to buy.
+21::lookup_helper::Wed Mar 10 14:25:33 EST 2021::Peer: 4: Yes!! I can go to 0 to buy.
+24::reply_helper::Wed Mar 10 14:25:33 EST 2021::Peer: 4: traceback peers [2]
+21::lookup_helper::Wed Mar 10 14:25:33 EST 2021::Peer: 4: Checking if I can go to 1 to buy.
+21::lookup_helper::Wed Mar 10 14:25:33 EST 2021::Peer: 4: Yes!! I can go to 1 to buy.
+21::lookup_helper::Wed Mar 10 14:25:33 EST 2021::Peer: 4: Checking if I can go to 2 to buy.
+28::lookup_helper::Wed Mar 10 14:25:35 EST 2021::Peer: 4: The request came through the path: [1]
+28::lookup_helper::Wed Mar 10 14:25:35 EST 2021::Peer: 4: I don't have 'Boar'. I have 'Fish'. Forwarding the message to my other peers.
+28::lookup_helper::Wed Mar 10 14:25:35 EST 2021::Peer: 4: Checking if I can go to 0 to buy.
+28::lookup_helper::Wed Mar 10 14:25:35 EST 2021::Peer: 4: Yes!! I can go to 0 to buy.
+24::reply_helper::Wed Mar 10 14:25:35 EST 2021::Peer: 4: traceback peers [1]
+28::lookup_helper::Wed Mar 10 14:25:35 EST 2021::Peer: 4: Checking if I can go to 1 to buy.
+28::lookup_helper::Wed Mar 10 14:25:35 EST 2021::Peer: 4: Checking if I can go to 2 to buy.
+28::lookup_helper::Wed Mar 10 14:25:35 EST 2021::Peer: 4: Yes!! I can go to 2 to buy.
+21::lookup_helper::Wed Mar 10 14:25:38 EST 2021::Peer: 4: The request came through the path: [2]
+21::lookup_helper::Wed Mar 10 14:25:38 EST 2021::Peer: 4: I don't have 'Boar'. I have 'Fish'. Forwarding the message to my other peers.
+21::lookup_helper::Wed Mar 10 14:25:38 EST 2021::Peer: 4: Checking if I can go to 0 to buy.
+21::lookup_helper::Wed Mar 10 14:25:38 EST 2021::Peer: 4: Yes!! I can go to 0 to buy.
+24::reply_helper::Wed Mar 10 14:25:38 EST 2021::Peer: 4: traceback peers [2]
+21::lookup_helper::Wed Mar 10 14:25:38 EST 2021::Peer: 4: Checking if I can go to 1 to buy.
+21::lookup_helper::Wed Mar 10 14:25:38 EST 2021::Peer: 4: Yes!! I can go to 1 to buy.
+21::lookup_helper::Wed Mar 10 14:25:38 EST 2021::Peer: 4: Checking if I can go to 2 to buy.
+28::lookup_helper::Wed Mar 10 14:25:40 EST 2021::Peer: 4: The request came through the path: [1]
+28::lookup_helper::Wed Mar 10 14:25:40 EST 2021::Peer: 4: I don't have 'Boar'. I have 'Fish'. Forwarding the message to my other peers.
+28::lookup_helper::Wed Mar 10 14:25:40 EST 2021::Peer: 4: Checking if I can go to 0 to buy.
+28::lookup_helper::Wed Mar 10 14:25:40 EST 2021::Peer: 4: Yes!! I can go to 0 to buy.
+24::reply_helper::Wed Mar 10 14:25:40 EST 2021::Peer: 4: traceback peers [1]
+28::lookup_helper::Wed Mar 10 14:25:40 EST 2021::Peer: 4: Checking if I can go to 1 to buy.
+28::lookup_helper::Wed Mar 10 14:25:40 EST 2021::Peer: 4: Checking if I can go to 2 to buy.
+28::lookup_helper::Wed Mar 10 14:25:40 EST 2021::Peer: 4: Yes!! I can go to 2 to buy.
+21::lookup_helper::Wed Mar 10 14:25:43 EST 2021::Peer: 4: The request came through the path: [2]
+21::lookup_helper::Wed Mar 10 14:25:43 EST 2021::Peer: 4: I don't have 'Boar'. I have 'Fish'. Forwarding the message to my other peers.
+21::lookup_helper::Wed Mar 10 14:25:43 EST 2021::Peer: 4: Checking if I can go to 0 to buy.
+21::lookup_helper::Wed Mar 10 14:25:43 EST 2021::Peer: 4: Yes!! I can go to 0 to buy.
+28::lookup_helper::Wed Mar 10 14:25:45 EST 2021::Peer: 4: The request came through the path: [1]
+28::lookup_helper::Wed Mar 10 14:25:45 EST 2021::Peer: 4: I don't have 'Boar'. I have 'Fish'. Forwarding the message to my other peers.
+28::lookup_helper::Wed Mar 10 14:25:45 EST 2021::Peer: 4: Checking if I can go to 0 to buy.
+28::lookup_helper::Wed Mar 10 14:25:45 EST 2021::Peer: 4: Yes!! I can go to 0 to buy.
+21::lookup_helper::Wed Mar 10 14:25:45 EST 2021::Peer: 4: Couldn't connect to peer 0 to buy.
+21::lookup_helper::Wed Mar 10 14:25:45 EST 2021::Peer: 4: Checking if I can go to 1 to buy.
+21::lookup_helper::Wed Mar 10 14:25:45 EST 2021::Peer: 4: Yes!! I can go to 1 to buy.
+21::lookup_helper::Wed Mar 10 14:25:45 EST 2021::Peer: 4: Checking if I can go to 2 to buy.
+23::reply_helper::Wed Mar 10 14:25:46 EST 2021::Peer: 4: traceback peers [1]
+28::lookup_helper::Wed Mar 10 14:25:46 EST 2021::Peer: 4: Checking if I can go to 1 to buy.
+28::lookup_helper::Wed Mar 10 14:25:46 EST 2021::Peer: 4: Checking if I can go to 2 to buy.
+28::lookup_helper::Wed Mar 10 14:25:46 EST 2021::Peer: 4: Yes!! I can go to 2 to buy.
+21::lookup_helper::Wed Mar 10 14:25:50 EST 2021::Peer: 4: The request came through the path: [2]
+21::lookup_helper::Wed Mar 10 14:25:50 EST 2021::Peer: 4: I don't have 'Boar'. I have 'Fish'. Forwarding the message to my other peers.
+21::lookup_helper::Wed Mar 10 14:25:50 EST 2021::Peer: 4: Checking if I can go to 0 to buy.
+21::lookup_helper::Wed Mar 10 14:25:50 EST 2021::Peer: 4: Yes!! I can go to 0 to buy.
+23::reply_helper::Wed Mar 10 14:25:50 EST 2021::Peer: 4: traceback peers [2]
+21::lookup_helper::Wed Mar 10 14:25:50 EST 2021::Peer: 4: Checking if I can go to 1 to buy.
+21::lookup_helper::Wed Mar 10 14:25:50 EST 2021::Peer: 4: Yes!! I can go to 1 to buy.
+21::lookup_helper::Wed Mar 10 14:25:50 EST 2021::Peer: 4: Checking if I can go to 2 to buy.
+28::lookup_helper::Wed Mar 10 14:25:51 EST 2021::Peer: 4: The request came through the path: [1]
+28::lookup_helper::Wed Mar 10 14:25:51 EST 2021::Peer: 4: I don't have 'Boar'. I have 'Fish'. Forwarding the message to my other peers.
+28::lookup_helper::Wed Mar 10 14:25:51 EST 2021::Peer: 4: Checking if I can go to 0 to buy.
+28::lookup_helper::Wed Mar 10 14:25:51 EST 2021::Peer: 4: Yes!! I can go to 0 to buy.
+23::reply_helper::Wed Mar 10 14:25:51 EST 2021::Peer: 4: traceback peers [1]
+28::lookup_helper::Wed Mar 10 14:25:51 EST 2021::Peer: 4: Checking if I can go to 1 to buy.
+28::lookup_helper::Wed Mar 10 14:25:51 EST 2021::Peer: 4: Checking if I can go to 2 to buy.
+28::lookup_helper::Wed Mar 10 14:25:51 EST 2021::Peer: 4: Yes!! I can go to 2 to buy.
+21::lookup_helper::Wed Mar 10 14:25:55 EST 2021::Peer: 4: The request came through the path: [2]
+21::lookup_helper::Wed Mar 10 14:25:55 EST 2021::Peer: 4: I don't have 'Boar'. I have 'Fish'. Forwarding the message to my other peers.
+21::lookup_helper::Wed Mar 10 14:25:55 EST 2021::Peer: 4: Checking if I can go to 0 to buy.
+21::lookup_helper::Wed Mar 10 14:25:55 EST 2021::Peer: 4: Yes!! I can go to 0 to buy.
+21::lookup_helper::Wed Mar 10 14:25:56 EST 2021::Peer: 4: Checking if I can go to 1 to buy.
+21::lookup_helper::Wed Mar 10 14:25:56 EST 2021::Peer: 4: Yes!! I can go to 1 to buy.
+21::lookup_helper::Wed Mar 10 14:25:56 EST 2021::Peer: 4: Checking if I can go to 2 to buy.
+28::lookup_helper::Wed Mar 10 14:25:56 EST 2021::Peer: 4: The request came through the path: [1]
+28::lookup_helper::Wed Mar 10 14:25:56 EST 2021::Peer: 4: I don't have 'Boar'. I have 'Fish'. Forwarding the message to my other peers.
+28::lookup_helper::Wed Mar 10 14:25:56 EST 2021::Peer: 4: Checking if I can go to 0 to buy.
+28::lookup_helper::Wed Mar 10 14:25:56 EST 2021::Peer: 4: Yes!! I can go to 0 to buy.
+23::reply_helper::Wed Mar 10 14:25:56 EST 2021::Peer: 4: traceback peers [1]
+28::lookup_helper::Wed Mar 10 14:25:56 EST 2021::Peer: 4: Checking if I can go to 1 to buy.
+28::lookup_helper::Wed Mar 10 14:25:56 EST 2021::Peer: 4: Checking if I can go to 2 to buy.
+28::lookup_helper::Wed Mar 10 14:25:56 EST 2021::Peer: 4: Yes!! I can go to 2 to buy.
+21::lookup_helper::Wed Mar 10 14:26:01 EST 2021::Peer: 4: The request came through the path: [2]
+21::lookup_helper::Wed Mar 10 14:26:01 EST 2021::Peer: 4: I don't have 'Boar'. I have 'Fish'. Forwarding the message to my other peers.
+21::lookup_helper::Wed Mar 10 14:26:01 EST 2021::Peer: 4: Checking if I can go to 0 to buy.
+21::lookup_helper::Wed Mar 10 14:26:01 EST 2021::Peer: 4: Yes!! I can go to 0 to buy.
+23::reply_helper::Wed Mar 10 14:26:01 EST 2021::Peer: 4: traceback peers [2]
+21::lookup_helper::Wed Mar 10 14:26:01 EST 2021::Peer: 4: Checking if I can go to 1 to buy.
+21::lookup_helper::Wed Mar 10 14:26:01 EST 2021::Peer: 4: Yes!! I can go to 1 to buy.
+21::lookup_helper::Wed Mar 10 14:26:01 EST 2021::Peer: 4: Checking if I can go to 2 to buy.
+28::lookup_helper::Wed Mar 10 14:26:01 EST 2021::Peer: 4: The request came through the path: [1]
+28::lookup_helper::Wed Mar 10 14:26:01 EST 2021::Peer: 4: I don't have 'Boar'. I have 'Fish'. Forwarding the message to my other peers.
+28::lookup_helper::Wed Mar 10 14:26:01 EST 2021::Peer: 4: Checking if I can go to 0 to buy.
+28::lookup_helper::Wed Mar 10 14:26:01 EST 2021::Peer: 4: Yes!! I can go to 0 to buy.
+23::reply_helper::Wed Mar 10 14:26:01 EST 2021::Peer: 4: traceback peers [1]
+28::lookup_helper::Wed Mar 10 14:26:01 EST 2021::Peer: 4: Checking if I can go to 1 to buy.
+28::lookup_helper::Wed Mar 10 14:26:01 EST 2021::Peer: 4: Checking if I can go to 2 to buy.
+28::lookup_helper::Wed Mar 10 14:26:01 EST 2021::Peer: 4: Yes!! I can go to 2 to buy.
+21::lookup_helper::Wed Mar 10 14:26:06 EST 2021::Peer: 4: The request came through the path: [2]
+21::lookup_helper::Wed Mar 10 14:26:06 EST 2021::Peer: 4: I don't have 'Boar'. I have 'Fish'. Forwarding the message to my other peers.
+21::lookup_helper::Wed Mar 10 14:26:06 EST 2021::Peer: 4: Checking if I can go to 0 to buy.
+21::lookup_helper::Wed Mar 10 14:26:06 EST 2021::Peer: 4: Yes!! I can go to 0 to buy.
+21::lookup_helper::Wed Mar 10 14:26:06 EST 2021::Peer: 4: Checking if I can go to 1 to buy.
+21::lookup_helper::Wed Mar 10 14:26:06 EST 2021::Peer: 4: Yes!! I can go to 1 to buy.
+21::lookup_helper::Wed Mar 10 14:26:06 EST 2021::Peer: 4: Checking if I can go to 2 to buy.
+28::lookup_helper::Wed Mar 10 14:26:06 EST 2021::Peer: 4: The request came through the path: [1]
+28::lookup_helper::Wed Mar 10 14:26:06 EST 2021::Peer: 4: I don't have 'Boar'. I have 'Fish'. Forwarding the message to my other peers.
+28::lookup_helper::Wed Mar 10 14:26:06 EST 2021::Peer: 4: Checking if I can go to 0 to buy.
+28::lookup_helper::Wed Mar 10 14:26:06 EST 2021::Peer: 4: Yes!! I can go to 0 to buy.
+23::reply_helper::Wed Mar 10 14:26:06 EST 2021::Peer: 4: traceback peers [1]
+28::lookup_helper::Wed Mar 10 14:26:06 EST 2021::Peer: 4: Checking if I can go to 1 to buy.
+28::lookup_helper::Wed Mar 10 14:26:06 EST 2021::Peer: 4: Checking if I can go to 2 to buy.
+28::lookup_helper::Wed Mar 10 14:26:06 EST 2021::Peer: 4: Yes!! I can go to 2 to buy.
+21::lookup_helper::Wed Mar 10 14:26:11 EST 2021::Peer: 4: The request came through the path: [2]
+21::lookup_helper::Wed Mar 10 14:26:11 EST 2021::Peer: 4: I don't have 'Boar'. I have 'Fish'. Forwarding the message to my other peers.
+21::lookup_helper::Wed Mar 10 14:26:11 EST 2021::Peer: 4: Checking if I can go to 0 to buy.
+21::lookup_helper::Wed Mar 10 14:26:11 EST 2021::Peer: 4: Yes!! I can go to 0 to buy.
+28::lookup_helper::Wed Mar 10 14:26:11 EST 2021::Peer: 4: The request came through the path: [1]
+28::lookup_helper::Wed Mar 10 14:26:11 EST 2021::Peer: 4: I don't have 'Boar'. I have 'Fish'. Forwarding the message to my other peers.
+28::lookup_helper::Wed Mar 10 14:26:11 EST 2021::Peer: 4: Checking if I can go to 0 to buy.
+28::lookup_helper::Wed Mar 10 14:26:11 EST 2021::Peer: 4: Yes!! I can go to 0 to buy.
