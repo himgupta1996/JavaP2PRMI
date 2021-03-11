@@ -48,7 +48,6 @@ public class Network {
 			all_nodes_copy.remove(i);
 			if(p2p.containsKey(i))
 			{
-				System.out.println(all_nodes_copy);
 				while(p2p.get(i).size() < K && all_nodes_copy.size() > 0)
 				{
 					Integer Random_Element = this.getRandomElement(all_nodes_copy);
@@ -98,7 +97,6 @@ public class Network {
 				}
 				
 			}
-			System.out.println(p2p);
 		}
 		try { 
 			  

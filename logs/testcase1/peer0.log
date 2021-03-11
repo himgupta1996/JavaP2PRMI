@@ -1,55 +1,56 @@
-1::Wed Mar 10 19:38:23 EST 2021::Logger Initialized
-1::Wed Mar 10 19:38:23 EST 2021::Peer 0: role: seller
-1::Wed Mar 10 19:38:23 EST 2021::Peer 0: port_id: 8010
-1::Wed Mar 10 19:38:23 EST 2021::Peer 0: item to buy/sell: Boar
-1::Wed Mar 10 19:38:23 EST 2021::Peer 0: available hop count for request: 5
-1::Wed Mar 10 19:38:23 EST 2021::Peer 0: testcase: 1
-1::Wed Mar 10 19:38:23 EST 2021::Peer 0: Ready
-23::Wed Mar 10 19:38:23 EST 2021::Peer 0: I have 5 items of 'Boar'
-22::Wed Mar 10 19:38:24 EST 2021::Peer 0: I have 5 items of 'Boar'
-23::Wed Mar 10 19:38:24 EST 2021::Peer 0: Sending confirmation to 4
-22::Wed Mar 10 19:38:24 EST 2021::Peer 0: Sending confirmation to 4
-30::Wed Mar 10 19:38:24 EST 2021::Peer 0: I have 3 items of 'Boar'
-30::Wed Mar 10 19:38:24 EST 2021::Peer 0: Sending confirmation to 5
-23::Wed Mar 10 19:38:29 EST 2021::Peer 0: I have 2 items of 'Boar'
-22::Wed Mar 10 19:38:29 EST 2021::Peer 0: I have 2 items of 'Boar'
-23::Wed Mar 10 19:38:29 EST 2021::Peer 0: Sending confirmation to 4
-22::Wed Mar 10 19:38:29 EST 2021::Peer 0: Sending confirmation to 4
-30::Wed Mar 10 19:38:29 EST 2021::Peer 0: My items are finished. Restocking 'Boar'.
-30::Wed Mar 10 19:38:29 EST 2021::Peer 0: Sending the request to 4 to lookup for the item 'Boar'.
-22::Wed Mar 10 19:38:34 EST 2021::Peer 0: I have 5 items of 'Boar'
-22::Wed Mar 10 19:38:34 EST 2021::Peer 0: Sending confirmation to 4
-22::Wed Mar 10 19:38:34 EST 2021::Peer 0: I have 5 items of 'Boar'
-22::Wed Mar 10 19:38:34 EST 2021::Peer 0: Sending confirmation to 4
-30::Wed Mar 10 19:38:34 EST 2021::Peer 0: I have 3 items of 'Boar'
-30::Wed Mar 10 19:38:34 EST 2021::Peer 0: Sending confirmation to 5
-22::Wed Mar 10 19:38:39 EST 2021::Peer 0: I have 2 items of 'Boar'
-22::Wed Mar 10 19:38:39 EST 2021::Peer 0: Sending confirmation to 4
-23::Wed Mar 10 19:38:39 EST 2021::Peer 0: I have 2 items of 'Boar'
-23::Wed Mar 10 19:38:39 EST 2021::Peer 0: Sending confirmation to 4
-30::Wed Mar 10 19:38:39 EST 2021::Peer 0: My items are finished. Restocking 'Boar'.
-30::Wed Mar 10 19:38:39 EST 2021::Peer 0: Sending the request to 4 to lookup for the item 'Boar'.
-23::Wed Mar 10 19:38:44 EST 2021::Peer 0: I have 5 items of 'Boar'
-22::Wed Mar 10 19:38:44 EST 2021::Peer 0: I have 5 items of 'Boar'
-23::Wed Mar 10 19:38:44 EST 2021::Peer 0: Sending confirmation to 4
-22::Wed Mar 10 19:38:44 EST 2021::Peer 0: Sending confirmation to 4
-30::Wed Mar 10 19:38:44 EST 2021::Peer 0: I have 3 items of 'Boar'
-30::Wed Mar 10 19:38:44 EST 2021::Peer 0: Sending confirmation to 5
-22::Wed Mar 10 19:38:49 EST 2021::Peer 0: I have 2 items of 'Boar'
-23::Wed Mar 10 19:38:49 EST 2021::Peer 0: I have 2 items of 'Boar'
-22::Wed Mar 10 19:38:49 EST 2021::Peer 0: Sending confirmation to 4
-23::Wed Mar 10 19:38:49 EST 2021::Peer 0: Sending confirmation to 4
-30::Wed Mar 10 19:38:49 EST 2021::Peer 0: My items are finished. Restocking 'Boar'.
-30::Wed Mar 10 19:38:49 EST 2021::Peer 0: Sending the request to 4 to lookup for the item 'Boar'.
-23::Wed Mar 10 19:38:54 EST 2021::Peer 0: I have 5 items of 'Boar'
-23::Wed Mar 10 19:38:54 EST 2021::Peer 0: Sending confirmation to 4
-22::Wed Mar 10 19:38:54 EST 2021::Peer 0: I have 5 items of 'Boar'
-22::Wed Mar 10 19:38:54 EST 2021::Peer 0: Sending confirmation to 4
-30::Wed Mar 10 19:38:54 EST 2021::Peer 0: I have 3 items of 'Boar'
-30::Wed Mar 10 19:38:54 EST 2021::Peer 0: Sending confirmation to 5
-22::Wed Mar 10 19:38:59 EST 2021::Peer 0: I have 2 items of 'Boar'
-22::Wed Mar 10 19:38:59 EST 2021::Peer 0: Sending confirmation to 4
-23::Wed Mar 10 19:38:59 EST 2021::Peer 0: I have 2 items of 'Boar'
-23::Wed Mar 10 19:38:59 EST 2021::Peer 0: Sending confirmation to 4
-30::Wed Mar 10 19:38:59 EST 2021::Peer 0: My items are finished. Restocking 'Boar'.
-30::Wed Mar 10 19:38:59 EST 2021::Peer 0: Sending the request to 4 to lookup for the item 'Boar'.
+1::Wed Mar 10 20:04:34 EST 2021::Logger Initialized
+1::Wed Mar 10 20:04:34 EST 2021::Peer 0: role: seller
+1::Wed Mar 10 20:04:34 EST 2021::Peer 0: port_id: 8010
+1::Wed Mar 10 20:04:34 EST 2021::Peer 0: item to buy/sell: Boar
+1::Wed Mar 10 20:04:34 EST 2021::Peer 0: available hop count for request: 5
+1::Wed Mar 10 20:04:34 EST 2021::Peer 0: testcase: 1
+1::Wed Mar 10 20:04:35 EST 2021::Peer 0: Ready
+23::Wed Mar 10 20:04:35 EST 2021::Peer 0: I have 5 items of 'Boar'
+22::Wed Mar 10 20:04:35 EST 2021::Peer 0: I have 5 items of 'Boar'
+23::Wed Mar 10 20:04:35 EST 2021::Peer 0: Sending confirmation to 4
+22::Wed Mar 10 20:04:35 EST 2021::Peer 0: Sending confirmation to 4
+30::Wed Mar 10 20:04:35 EST 2021::Peer 0: I have 3 items of 'Boar'
+30::Wed Mar 10 20:04:35 EST 2021::Peer 0: Sending confirmation to 5
+23::Wed Mar 10 20:04:40 EST 2021::Peer 0: I have 2 items of 'Boar'
+23::Wed Mar 10 20:04:40 EST 2021::Peer 0: Sending confirmation to 4
+23::Wed Mar 10 20:04:40 EST 2021::Peer 0: I have 2 items of 'Boar'
+23::Wed Mar 10 20:04:40 EST 2021::Peer 0: Sending confirmation to 4
+30::Wed Mar 10 20:04:40 EST 2021::Peer 0: My items are finished. Restocking 'Boar'.
+30::Wed Mar 10 20:04:40 EST 2021::Peer 0: Sending the request to 4 to lookup for the item 'Boar'.
+23::Wed Mar 10 20:04:45 EST 2021::Peer 0: I have 5 items of 'Boar'
+23::Wed Mar 10 20:04:45 EST 2021::Peer 0: Sending confirmation to 4
+23::Wed Mar 10 20:04:45 EST 2021::Peer 0: I have 4 items of 'Boar'
+23::Wed Mar 10 20:04:45 EST 2021::Peer 0: Sending confirmation to 4
+30::Wed Mar 10 20:04:46 EST 2021::Peer 0: I have 3 items of 'Boar'
+30::Wed Mar 10 20:04:46 EST 2021::Peer 0: Sending confirmation to 5
+23::Wed Mar 10 20:04:50 EST 2021::Peer 0: I have 2 items of 'Boar'
+23::Wed Mar 10 20:04:50 EST 2021::Peer 0: Sending confirmation to 4
+23::Wed Mar 10 20:04:50 EST 2021::Peer 0: I have 1 items of 'Boar'
+23::Wed Mar 10 20:04:50 EST 2021::Peer 0: Sending confirmation to 4
+30::Wed Mar 10 20:04:51 EST 2021::Peer 0: My items are finished. Restocking 'Boar'.
+30::Wed Mar 10 20:04:51 EST 2021::Peer 0: Sending the request to 4 to lookup for the item 'Boar'.
+23::Wed Mar 10 20:04:55 EST 2021::Peer 0: I have 5 items of 'Boar'
+23::Wed Mar 10 20:04:55 EST 2021::Peer 0: Sending confirmation to 4
+23::Wed Mar 10 20:04:55 EST 2021::Peer 0: I have 4 items of 'Boar'
+23::Wed Mar 10 20:04:55 EST 2021::Peer 0: Sending confirmation to 4
+30::Wed Mar 10 20:04:56 EST 2021::Peer 0: I have 3 items of 'Boar'
+30::Wed Mar 10 20:04:56 EST 2021::Peer 0: Sending confirmation to 5
+23::Wed Mar 10 20:05:01 EST 2021::Peer 0: I have 2 items of 'Boar'
+23::Wed Mar 10 20:05:01 EST 2021::Peer 0: Sending confirmation to 4
+23::Wed Mar 10 20:05:01 EST 2021::Peer 0: I have 2 items of 'Boar'
+23::Wed Mar 10 20:05:01 EST 2021::Peer 0: Sending confirmation to 4
+30::Wed Mar 10 20:05:01 EST 2021::Peer 0: I have 1 items of 'Boar'
+30::Wed Mar 10 20:05:01 EST 2021::Peer 0: Sending confirmation to 5
+33::Wed Mar 10 20:05:01 EST 2021::Peer 0: Sorry, I sold my item to someone else.
+23::Wed Mar 10 20:05:06 EST 2021::Peer 0: My items are finished. Restocking 'Boar'.
+23::Wed Mar 10 20:05:06 EST 2021::Peer 0: Sending the request to 5 to lookup for the item 'Boar'.
+23::Wed Mar 10 20:05:06 EST 2021::Peer 0: I have 5 items of 'Boar'
+23::Wed Mar 10 20:05:06 EST 2021::Peer 0: Sending confirmation to 4
+30::Wed Mar 10 20:05:06 EST 2021::Peer 0: I have 4 items of 'Boar'
+30::Wed Mar 10 20:05:06 EST 2021::Peer 0: Sending confirmation to 5
+23::Wed Mar 10 20:05:11 EST 2021::Peer 0: I have 3 items of 'Boar'
+23::Wed Mar 10 20:05:11 EST 2021::Peer 0: Sending confirmation to 4
+23::Wed Mar 10 20:05:11 EST 2021::Peer 0: I have 2 items of 'Boar'
+23::Wed Mar 10 20:05:11 EST 2021::Peer 0: Sending confirmation to 4
+30::Wed Mar 10 20:05:11 EST 2021::Peer 0: I have 2 items of 'Boar'
+30::Wed Mar 10 20:05:11 EST 2021::Peer 0: Sending confirmation to 5
