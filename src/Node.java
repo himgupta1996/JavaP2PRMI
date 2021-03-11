@@ -86,11 +86,8 @@ public class Node implements Hello {
 	    }
 	}
 	
-//	TODO: generalize the the get_stub method
-	
 	//function to check the item availability, forwarding lookup request, and reply back to the buyer with the seller Id
 	public void lookup_helper(String productname, int hopcount, ArrayList<Integer> buyers) {
-//		logger.info("Peer "+ this.node_id +": The request came through the path: "+buyers);
 		if(this.role.equals("seller") && productname.equals(this.item) && this.m>0) {
 			logger.info("Peer "+this.node_id+": I have "+this.m+" items of '"+this.item+"'");
 			int last_node_index = buyers.size()-1;
@@ -113,9 +110,7 @@ public class Node implements Hello {
 		else {
 			if(this.m == 0 && this.role.equals("seller")) {
 				//Restocking the items
-				
 				int rnd = new Random().nextInt(this.items.length);
-			    //this.item = this.items[rnd];
 				if(this.testcase.equals("1")) {
 					logger.info("Peer "+this.node_id+": My items are finished. Restocking 'Boar'.");
 					this.item = "Boar";
@@ -132,15 +127,10 @@ public class Node implements Hello {
 				
 			}
 			if(hopcount>0){
-//				if(this.role.equals("seller")) {
-//					logger.info("Peer "+this.node_id+": I don't have '"+productname+"'. I have '"+this.item+"'"+". Forwarding the message to my other peers.");
-//				}
 				buyers.add(this.node_id);
 				for(int i= 0; i<this.peers.length;i++) {
 					int neighbour_peer = peers[i];
-//					logger.info("Peer "+ this.node_id +": Checking if I can go to "+neighbour_peer+ " to buy.");
 					if(!buyers.contains(neighbour_peer)){
-//						logger.info("Peer "+ this.node_id +": Yes!! I can go to "+neighbour_peer+ " to buy.");
 						String neighbour_ip = this.config_lookup.get(neighbour_peer)[1];
 						int neighbour_port = Integer.parseInt(this.config_lookup.get(neighbour_peer)[0]);
 						try {
@@ -156,9 +146,6 @@ public class Node implements Hello {
 					}
 				}
 			}
-//			else {
-//				logger.info("Peer "+this.node_id+": Hopcount is finished. Can't forward the request to other peers.");
-//			}
 		}
 		   
 	}
@@ -179,8 +166,6 @@ public class Node implements Hello {
 	    	}
 	    }
 	    else {
-
-//	    	logger.info("Peer "+ this.node_id +": I found my seller in peer "+sellerId);
 	    	try {
 	    		logger.info("Peer "+ this.node_id +": Trying to Buy '"+this.item+ "' from peer "+sellerId);
 	    		String neighbour_ip = this.config_lookup.get(sellerId)[1];
@@ -196,12 +181,10 @@ public class Node implements Hello {
 				return false;
 			}
 	    }
-	   
     }
 	
     //A helper function to reply back to the peer from where the request originated
     public void reply_helper(ArrayList<Integer> trace_back_peers, int sellerId) {
-//    	logger.info("Peer "+this.node_id+ ": traceback peers "+trace_back_peers);
     	if(trace_back_peers.size() == 0) {
     		//found the actual buyer
     		this.reply(this.node_id, sellerId);
@@ -212,7 +195,6 @@ public class Node implements Hello {
     		int lastNodeId = trace_back_peers.get(last_node_index);
     		trace_back_peers.remove(last_node_index);
     		try {
-//    			logger.info("Peer "+ this.node_id +": Sending back the reply to "+lastNodeId);
     			String neighbour_ip = this.config_lookup.get(lastNodeId)[1];
 				int neighbour_port = Integer.parseInt(config_lookup.get(lastNodeId)[0]);
 				Registry registry = LocateRegistry.getRegistry(neighbour_ip, neighbour_port); 
@@ -222,15 +204,12 @@ public class Node implements Hello {
     		catch (Exception e){
     			logger.info("Peer "+ this.node_id +": Couldn't connect to peer "+lastNodeId+ " to buy.");
 				System.err.println("Client exception: " + e.toString()); 
-//		        e.printStackTrace();
     		}
     	}
     }
 	
     //To forward a lookup request to all the neighboring peers with the item buyer wants to buy
 	private void lookup(String product_name, int hopcount) {
-
-//		logger.info("Peer "+this.node_id+": Looking up '"+product_name+ "' in my neighbour peers.");
 		if(hopcount>0) {
 			for(int i= 0; i<this.peers.length;i++) {
 				logger.info("Peer "+this.node_id+": Sending lookup request for item '"+product_name+ "' in my neighbour peer "+peers[i]+".");
