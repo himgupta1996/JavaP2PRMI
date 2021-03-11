@@ -1,0 +1,3 @@
+1::main::Wed Mar 10 13:11:53 EST 2021::Logger Initialized
+1::main::Wed Mar 10 13:11:53 EST 2021::First Testcase:
+1::main::Wed Mar 10 13:11:53 EST 2021::One seller of boar, 3 buyers of boars, the remaining peers have no role. Fix the neighborhood structure so that buyers and sellers are 2-hop away in the peer-to-peer overlay network. Ensure that all items are sold and restocked and that all buyers can buy forever.

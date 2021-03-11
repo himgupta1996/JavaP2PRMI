@@ -46,8 +46,8 @@ public class Node implements Hello {
 		logger.info("Peer "+this.node_id+ ": role: "+this.role);
 		logger.info("Peer "+this.node_id+ ": port_id: "+this.port_id);
 		logger.info("Peer "+this.node_id+ ": item to buy/sell: "+this.item);
-		logger.info("Peer "+this.node_id+ ": peers: "+this.peers);
 		logger.info("Peer "+this.node_id+ ": available hop count for request: "+this.hopcount);
+		logger.info("Peer "+this.node_id+ ": testcase: "+this.testcase);
 
 		// Initializing the config Hash-map once the class loads from the config file
 		// config_lookup is a variable of the Node class which is used to lookup port number and the corresponding ip for a given node
@@ -265,8 +265,10 @@ public class Node implements Hello {
 					this.item = "Boar";
 				}
 				else if(!this.testcase.equals("2")) {
-					int rnd = new Random().nextInt(this.items.length);
-				    this.item = this.items[rnd];
+					if(this.item.equals("")) {
+						int rnd = new Random().nextInt(this.items.length);
+					    this.item = this.items[rnd];
+					}
 				}
 
 			    logger.info("Peer "+this.node_id+ ": I want to buy '"+ this.item+"'");
@@ -291,6 +293,9 @@ public class Node implements Hello {
 					boolean bought = this.buy(this.sellers.get(rnd_seller));
 					if(bought) {
 						logger.info("Peer "+this.node_id+ ": Successfully bought '"+ this.item + "' from "+this.sellers.get(rnd_seller));
+						if(testcase.equals("0")) {
+							this.item="";
+						}
 						//Clearing all sellers
 						this.sellers.clear();
 					}
@@ -317,7 +322,7 @@ public class Node implements Hello {
     	
 		String node_id=args[0];
 		String testcase = "0"; //Defining the testcase to decide on the item initialization in sellers/buyers upon finishing of stock.
-		if(args.length == 2) {
+		if(args.length > 1) {
 			testcase = args[1];
 		}
 		int hopcount = 1; //Defining the hopcount according to the testcase
@@ -341,8 +346,13 @@ public class Node implements Hello {
 					node_info[1]=node_info[1].replace("[","");
 	        		node_info[1]=node_info[1].replace("]","");
 					String[] s1=node_info[1].split(",");
-					PeerList=new int[s1.length];
-					for (int i = 0; i < s1.length; i++){
+					int Peerlistlength = s1.length;
+					if (s1[0] == "")
+					{
+						Peerlistlength = 0;
+					}
+					PeerList=new int[Peerlistlength];
+					for (int i = 0; i < Peerlistlength; i++){
 						PeerList[i]=Integer.valueOf(s1[i]);
 					}
 
@@ -381,7 +391,7 @@ public class Node implements Hello {
 		
 		//Defining the logger file where the specific peer will log its actions
 		Logger logger = Logger.getLogger("MyLog");
-		String filename=node_id+".log";
+		String filename="../logs/"+"testcase"+testcase+"/"+"peer"+node_id+".log";
 		FileHandler fh;
 		try{
 			fh = new FileHandler(filename);

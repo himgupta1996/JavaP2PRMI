@@ -46,15 +46,66 @@ public class Network {
 			List<Integer> neighbors = new ArrayList<Integer>();
 			ArrayList<Integer> all_nodes_copy = new ArrayList<Integer>(all_nodes);
 			all_nodes_copy.remove(i);
-			neighbors = this.getRandomElement(all_nodes_copy, K);
-			p2p.put(i, neighbors);
+			if(p2p.containsKey(i))
+			{
+				System.out.println(all_nodes_copy);
+				while(p2p.get(i).size() < K && all_nodes_copy.size() > 0)
+				{
+					Integer Random_Element = this.getRandomElement(all_nodes_copy);
+					if(p2p.containsKey(Random_Element))
+					{
+						if(p2p.get(Random_Element).size() < K && !p2p.get(i).contains(Random_Element))
+						{
+							p2p.get(Random_Element).add(i);
+							p2p.get(i).add(Random_Element);
+						}
+					}
+					else
+					{
+						ArrayList<Integer> Random_Element_Neighbors = new ArrayList<Integer>();
+						p2p.put(Random_Element, Random_Element_Neighbors);
+						p2p.get(i).add(Random_Element);
+						p2p.get(Random_Element).add(i);
+					}
+					all_nodes_copy.remove(Random_Element);
+				}
+				
+			}
+			else
+			{
+				ArrayList<Integer> i_neighbors = new ArrayList<Integer>();
+				p2p.put(i, i_neighbors);
+				System.out.println(all_nodes_copy);
+				while(p2p.get(i).size() < K && all_nodes_copy.size() > 0)
+				{
+					Integer Random_Element = this.getRandomElement(all_nodes_copy);
+					if(p2p.containsKey(Random_Element))
+					{
+						if(p2p.get(Random_Element).size() < K && !p2p.get(i).contains(Random_Element))
+						{
+							p2p.get(Random_Element).add(i);
+							p2p.get(i).add(Random_Element);
+						}
+					}
+					else
+					{
+						ArrayList<Integer> Random_Element_Neighbors = new ArrayList<Integer>();
+						p2p.put(Random_Element, Random_Element_Neighbors);
+						p2p.get(i).add(Random_Element);
+						p2p.get(Random_Element).add(i);
+					}
+					all_nodes_copy.remove(Random_Element);
+				}
+				
+			}
+			System.out.println(p2p);
 		}
 		try { 
 			  
             bf = new BufferedWriter(new FileWriter(file));
 
             for (Map.Entry<Integer, List<Integer>> entry : 
-                 p2p.entrySet()) { 
+                 p2p.entrySet()) {
             	int rnd_item = new Random().nextInt(items.length);
                 int rnd_role = new Random().nextInt(roles.length);
                 if(roles[rnd_role] == "seller")
@@ -115,9 +166,9 @@ public class Network {
 	            bf.newLine(); 
 	            bf.write(3 + " "+ p2p.get(3).toString().replaceAll("\\s", "") + " " + "buyer" + " " + "Boar");
 	            bf.newLine(); 
-	            bf.write(4 + " "+ p2p.get(4).toString().replaceAll("\\s", "") + " " + "seller" + " " + "Fish" + " " + 5);
+	            bf.write(4 + " "+ p2p.get(4).toString().replaceAll("\\s", "") + " " + "no_role" + " " + "Fish" + " " + 5);
 	            bf.newLine(); 
-	            bf.write(5 + " "+ p2p.get(5).toString().replaceAll("\\s", "") + " " + "seller" + " " + "Salt" + " " + 5);
+	            bf.write(5 + " "+ p2p.get(5).toString().replaceAll("\\s", "") + " " + "no_role" + " " + "Salt" + " " + 5);
                 bf.newLine();
 	  
 	            bf.flush(); 
@@ -184,19 +235,12 @@ public class Network {
 	
 	/*Helper Functions below*/
 	
-	public List<Integer> getRandomElement(ArrayList<Integer> list, int totalItems)
+	public Integer getRandomElement(ArrayList<Integer> list)
     {
         Random rand = new Random();
-        List<Integer> newList = new ArrayList<>();
-        for (int i = 0; i < totalItems; i++) {
- 
-            int randomIndex = rand.nextInt(list.size());
- 
-            newList.add(list.get(randomIndex));
- 
-            list.remove(randomIndex);
-        }
-        return newList;
+        int randomIndex = rand.nextInt(list.size());
+        int response = list.get(randomIndex);
+        return response;
     }
 	
 	public HashMap<Integer, List<Integer>> get_network() {

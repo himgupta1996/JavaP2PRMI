@@ -1,0 +1,915 @@
+1::Wed Mar 10 19:39:04 EST 2021::Logger Initialized
+1::Wed Mar 10 19:39:04 EST 2021::Peer 3: role: buyer
+1::Wed Mar 10 19:39:04 EST 2021::Peer 3: port_id: 8013
+1::Wed Mar 10 19:39:04 EST 2021::Peer 3: item to buy/sell: Fish
+1::Wed Mar 10 19:39:04 EST 2021::Peer 3: available hop count for request: 1
+1::Wed Mar 10 19:39:04 EST 2021::Peer 3: testcase: 2
+1::Wed Mar 10 19:39:04 EST 2021::Peer 3: Ready
+1::Wed Mar 10 19:39:04 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:04 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:04 EST 2021::Peer 3: The sellers who gave positive response are [0].
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Trying to Buy 'Fish' from peer 0
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Successfully bought 'Fish' from 0
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:06 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:07 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:08 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: I want to buy 'Fish'
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:39:09 EST 2021::Peer 3: Couldn't find the item 'Fish' anywhere.

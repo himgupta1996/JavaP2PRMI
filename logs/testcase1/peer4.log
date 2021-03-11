@@ -1,0 +1,47 @@
+1::Wed Mar 10 19:38:22 EST 2021::Logger Initialized
+1::Wed Mar 10 19:38:23 EST 2021::Peer 4: role: no_role
+1::Wed Mar 10 19:38:23 EST 2021::Peer 4: port_id: 8014
+1::Wed Mar 10 19:38:23 EST 2021::Peer 4: item to buy/sell: Fish
+1::Wed Mar 10 19:38:23 EST 2021::Peer 4: available hop count for request: 5
+1::Wed Mar 10 19:38:23 EST 2021::Peer 4: testcase: 1
+1::Wed Mar 10 19:38:23 EST 2021::Peer 4: Ready
+23::Wed Mar 10 19:38:23 EST 2021::Peer 4: Sending the request to 0 to lookup for the item 'Boar'.
+22::Wed Mar 10 19:38:23 EST 2021::Peer 4: Sending the request to 0 to lookup for the item 'Boar'.
+22::Wed Mar 10 19:38:24 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
+23::Wed Mar 10 19:38:24 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.
+22::Wed Mar 10 19:38:29 EST 2021::Peer 4: Sending the request to 0 to lookup for the item 'Boar'.
+23::Wed Mar 10 19:38:29 EST 2021::Peer 4: Sending the request to 0 to lookup for the item 'Boar'.
+23::Wed Mar 10 19:38:29 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.
+22::Wed Mar 10 19:38:29 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
+28::Wed Mar 10 19:38:29 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
+28::Wed Mar 10 19:38:29 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.
+22::Wed Mar 10 19:38:34 EST 2021::Peer 4: Sending the request to 0 to lookup for the item 'Boar'.
+23::Wed Mar 10 19:38:34 EST 2021::Peer 4: Sending the request to 0 to lookup for the item 'Boar'.
+22::Wed Mar 10 19:38:34 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
+23::Wed Mar 10 19:38:34 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.
+23::Wed Mar 10 19:38:39 EST 2021::Peer 4: Sending the request to 0 to lookup for the item 'Boar'.
+22::Wed Mar 10 19:38:39 EST 2021::Peer 4: Sending the request to 0 to lookup for the item 'Boar'.
+23::Wed Mar 10 19:38:39 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.
+22::Wed Mar 10 19:38:39 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
+27::Wed Mar 10 19:38:39 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
+27::Wed Mar 10 19:38:39 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.
+23::Wed Mar 10 19:38:44 EST 2021::Peer 4: Sending the request to 0 to lookup for the item 'Boar'.
+22::Wed Mar 10 19:38:44 EST 2021::Peer 4: Sending the request to 0 to lookup for the item 'Boar'.
+23::Wed Mar 10 19:38:44 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.
+22::Wed Mar 10 19:38:44 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
+23::Wed Mar 10 19:38:49 EST 2021::Peer 4: Sending the request to 0 to lookup for the item 'Boar'.
+22::Wed Mar 10 19:38:49 EST 2021::Peer 4: Sending the request to 0 to lookup for the item 'Boar'.
+23::Wed Mar 10 19:38:49 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.
+22::Wed Mar 10 19:38:49 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
+27::Wed Mar 10 19:38:49 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
+27::Wed Mar 10 19:38:49 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.
+23::Wed Mar 10 19:38:54 EST 2021::Peer 4: Sending the request to 0 to lookup for the item 'Boar'.
+22::Wed Mar 10 19:38:54 EST 2021::Peer 4: Sending the request to 0 to lookup for the item 'Boar'.
+23::Wed Mar 10 19:38:54 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.
+22::Wed Mar 10 19:38:54 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
+23::Wed Mar 10 19:38:59 EST 2021::Peer 4: Sending the request to 0 to lookup for the item 'Boar'.
+22::Wed Mar 10 19:38:59 EST 2021::Peer 4: Sending the request to 0 to lookup for the item 'Boar'.
+23::Wed Mar 10 19:38:59 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.
+22::Wed Mar 10 19:38:59 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
+27::Wed Mar 10 19:38:59 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
+27::Wed Mar 10 19:38:59 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.

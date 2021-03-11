@@ -1,0 +1,94 @@
+1::Wed Mar 10 19:53:43 EST 2021::Logger Initialized
+1::Wed Mar 10 19:53:44 EST 2021::Peer 1: role: buyer
+1::Wed Mar 10 19:53:44 EST 2021::Peer 1: port_id: 8011
+1::Wed Mar 10 19:53:44 EST 2021::Peer 1: item to buy/sell: Fish
+1::Wed Mar 10 19:53:44 EST 2021::Peer 1: available hop count for request: 5
+1::Wed Mar 10 19:53:44 EST 2021::Peer 1: testcase: 0
+1::Wed Mar 10 19:53:44 EST 2021::Peer 1: Ready
+1::Wed Mar 10 19:53:44 EST 2021::Peer 1: I want to buy 'Fish'
+1::Wed Mar 10 19:53:44 EST 2021::Peer 1: Sending lookup request for item 'Fish' in my neighbour peer 0.
+20::Wed Mar 10 19:53:45 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
+21::Wed Mar 10 19:53:45 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Boar'.
+27::Wed Mar 10 19:53:45 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+28::Wed Mar 10 19:53:45 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+1::Wed Mar 10 19:53:45 EST 2021::Peer 1: Sending lookup request for item 'Fish' in my neighbour peer 4.
+20::Wed Mar 10 19:53:45 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
+20::Wed Mar 10 19:53:45 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
+1::Wed Mar 10 19:53:45 EST 2021::Peer 1: Couldn't find the item 'Fish' anywhere.
+28::Wed Mar 10 19:53:50 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+20::Wed Mar 10 19:53:50 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
+1::Wed Mar 10 19:53:50 EST 2021::Peer 1: I want to buy 'Fish'
+1::Wed Mar 10 19:53:50 EST 2021::Peer 1: Sending lookup request for item 'Fish' in my neighbour peer 0.
+28::Wed Mar 10 19:53:50 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+21::Wed Mar 10 19:53:50 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
+21::Wed Mar 10 19:53:50 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
+1::Wed Mar 10 19:53:50 EST 2021::Peer 1: Sending lookup request for item 'Fish' in my neighbour peer 4.
+21::Wed Mar 10 19:53:50 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
+1::Wed Mar 10 19:53:50 EST 2021::Peer 1: Couldn't find the item 'Fish' anywhere.
+28::Wed Mar 10 19:53:50 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Fish'.
+28::Wed Mar 10 19:53:55 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+21::Wed Mar 10 19:53:55 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
+20::Wed Mar 10 19:53:55 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
+1::Wed Mar 10 19:53:55 EST 2021::Peer 1: I want to buy 'Fish'
+28::Wed Mar 10 19:53:55 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+1::Wed Mar 10 19:53:55 EST 2021::Peer 1: Sending lookup request for item 'Fish' in my neighbour peer 0.
+20::Wed Mar 10 19:53:55 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
+21::Wed Mar 10 19:53:55 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
+1::Wed Mar 10 19:53:55 EST 2021::Peer 1: Sending lookup request for item 'Fish' in my neighbour peer 4.
+28::Wed Mar 10 19:53:55 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Fish'.
+1::Wed Mar 10 19:53:55 EST 2021::Peer 1: Couldn't find the item 'Fish' anywhere.
+28::Wed Mar 10 19:54:00 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+21::Wed Mar 10 19:54:00 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
+20::Wed Mar 10 19:54:00 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
+1::Wed Mar 10 19:54:00 EST 2021::Peer 1: I want to buy 'Fish'
+1::Wed Mar 10 19:54:01 EST 2021::Peer 1: Sending lookup request for item 'Fish' in my neighbour peer 0.
+20::Wed Mar 10 19:54:01 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
+28::Wed Mar 10 19:54:01 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+1::Wed Mar 10 19:54:01 EST 2021::Peer 1: Sending lookup request for item 'Fish' in my neighbour peer 4.
+1::Wed Mar 10 19:54:01 EST 2021::Peer 1: Couldn't find the item 'Fish' anywhere.
+28::Wed Mar 10 19:54:01 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Fish'.
+20::Wed Mar 10 19:54:01 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
+28::Wed Mar 10 19:54:06 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+20::Wed Mar 10 19:54:06 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
+20::Wed Mar 10 19:54:06 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
+1::Wed Mar 10 19:54:06 EST 2021::Peer 1: I want to buy 'Fish'
+1::Wed Mar 10 19:54:06 EST 2021::Peer 1: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:54:06 EST 2021::Peer 1: Sending lookup request for item 'Fish' in my neighbour peer 4.
+20::Wed Mar 10 19:54:06 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
+28::Wed Mar 10 19:54:06 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+1::Wed Mar 10 19:54:06 EST 2021::Peer 1: Couldn't find the item 'Fish' anywhere.
+28::Wed Mar 10 19:54:06 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Fish'.
+20::Wed Mar 10 19:54:06 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
+28::Wed Mar 10 19:54:11 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+20::Wed Mar 10 19:54:11 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
+20::Wed Mar 10 19:54:11 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
+1::Wed Mar 10 19:54:11 EST 2021::Peer 1: I want to buy 'Fish'
+1::Wed Mar 10 19:54:11 EST 2021::Peer 1: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:54:11 EST 2021::Peer 1: Sending lookup request for item 'Fish' in my neighbour peer 4.
+1::Wed Mar 10 19:54:11 EST 2021::Peer 1: Couldn't find the item 'Fish' anywhere.
+20::Wed Mar 10 19:54:11 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
+28::Wed Mar 10 19:54:11 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+27::Wed Mar 10 19:54:11 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Fish'.
+20::Wed Mar 10 19:54:11 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
+27::Wed Mar 10 19:54:16 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+20::Wed Mar 10 19:54:16 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
+20::Wed Mar 10 19:54:16 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
+1::Wed Mar 10 19:54:16 EST 2021::Peer 1: I want to buy 'Fish'
+1::Wed Mar 10 19:54:16 EST 2021::Peer 1: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:54:16 EST 2021::Peer 1: Sending lookup request for item 'Fish' in my neighbour peer 4.
+1::Wed Mar 10 19:54:16 EST 2021::Peer 1: Couldn't find the item 'Fish' anywhere.
+27::Wed Mar 10 19:54:16 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+20::Wed Mar 10 19:54:16 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
+20::Wed Mar 10 19:54:16 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
+27::Wed Mar 10 19:54:16 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Fish'.
+27::Wed Mar 10 19:54:21 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+20::Wed Mar 10 19:54:21 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
+20::Wed Mar 10 19:54:21 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
+1::Wed Mar 10 19:54:21 EST 2021::Peer 1: I want to buy 'Fish'
+1::Wed Mar 10 19:54:21 EST 2021::Peer 1: Sending lookup request for item 'Fish' in my neighbour peer 0.
+1::Wed Mar 10 19:54:21 EST 2021::Peer 1: Sending lookup request for item 'Fish' in my neighbour peer 4.
+1::Wed Mar 10 19:54:21 EST 2021::Peer 1: Couldn't find the item 'Fish' anywhere.
+20::Wed Mar 10 19:54:21 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
+27::Wed Mar 10 19:54:21 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+27::Wed Mar 10 19:54:21 EST 2021::Peer 1: Sending the request to 0 to lookup for the item 'Fish'.
+20::Wed Mar 10 19:54:21 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
