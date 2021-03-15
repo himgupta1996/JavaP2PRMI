@@ -9,93 +9,226 @@ import os
 import subprocess
 import time
 import sys
-### Compilation ###
-print("Compiling the java files.")
-os.system("javac *.java")
-print("Compilation successfull.")
-time.sleep(2)
+import re
+import pexpect
+import pexpect.popen_spawn
+import io
 
-#checking if random argument has been passed
+#checking if the time is passed as an argumnet
 if(len(sys.argv)>1):
-    k=0
+    t=sys.argv[0]
 else:
-    k=1
+    t=90
 
-# mapping from ports to nodes running on those ports
-ports={}
 
+#Reading the config file where the IPs and Ports of different peers are mentioned
 with open('config.txt', 'r') as myfile:
     lines = myfile.readlines()
+
+# getting the peers details in a dictionary nodes
+nodes={}
 
 for j in range(len(lines)):
     if(j==0):
         continue
-    ports[lines[j].split(' ')[0]]=lines[j].split(' ')[1]
+    line_args = re.split('\s', lines[j])
+    nodes[line_args[0]] = {}
+    nodes[line_args[0]]['port']=line_args[1]
+    nodes[line_args[0]]['ip']=line_args[2]
 
+print(nodes)
 
-testcase_description={0:"Constructing a random network based on the value of N and K specified in the config file.",
-                      1:"One seller of boar, 3 buyers of boars, the remaining peers have no role. Fix the neighborhood structure so that buyers and sellers are 2-hop away in the peer-to-peer overlay network. Ensure that all items are sold and restocked and that all buyers can buy forever.",
-                      2:"Simulate a race condition in buy() wherein a seller has stock of 1 for an item but then replies to multiple buyers."}
+## Getting number of nodes and maximun number of possible connections from each peer
+N = lines[0].split(" ")[0]
 
+## Generating the network.txt File which defines the P2P Network
+# os.system("java Initializer")
 
-if(k==0):
-    print("Running testcase: %s" % (0))
-    print("Description: %s" % (testcase_description[0]))
-    os.system("java Initializer")
-    n=int(lines[0].split(" ")[0])
-    #initiating the n nodes 
-    for j in range(0,n):
-        subprocess.Popen("java Node %s %s" % (j,0))
-    print("Waiting for 20 secs for some transactions to get completed.")
-    time.sleep(40)
-    print("Wait time completed. Killing the processes now.")
-    for j in range(0,n):
-        output = subprocess.check_output("netstat -ano | findstr :"+ports[str(j)], shell = True)
-        pIds = str(output).split("\\r")[0].split()[-1]
-        
-        ##Killing the processes
-        os.system("taskkill /PID %s /F"%(pIds))
-        print("Terminated the process %s" % (pIds))
+pem_file = r'C:\Users\Himanshu\.aws\GUIHimKeyPair.pem'
+for node, node_info in nodes.items():
+    # print(node)
+    # print(node_info)
     
-    print("Check the logfiles in logs/testcase%s for analysing the transactions" % (0))
-
-else:
-    for i in range(k,3):
-        print("Running testcase: %s" % (i))
-        print("Description: %s" % (testcase_description[i]))
-
-        if(i==1):
-            
-            os.system("java Initializer %s" % (i))
-            for j in range(0,6):
-                subprocess.Popen("java Node %s %s" % (j,i))
-            print("Waiting for 20 secs for some transactions to get completed.")
-            time.sleep(40)
-            print("Wait time completed. Killing the processes now.")
-            for j in range(0,6):
-                output = subprocess.check_output("netstat -ano | findstr :"+ports[str(j)], shell = True)
-                pIds = str(output).split("\\r")[0].split()[-1]
-                
-                ##Killing the processes
-                os.system("taskkill /PID %s /F"%(pIds))
-                print("Terminated the process %s" % (pIds))
-
-        if(i==2):
-            order=[1,2,3,0]
-            os.system("java Initializer %s" % (i))
-            for j in order:
-                subprocess.Popen("java Node %s %s" % (j,i))
-            print("Waiting for 5 secs for some transactions to get completed.")
-            time.sleep(5)
-            print("Wait time completed. Killing the processes now.")
-            for j in order:
-                output = subprocess.check_output("netstat -ano | findstr :"+ports[str(j)], shell = True)
-                pIds = str(output).split("\\r")[0].split()[-1]
-                
-                ##Killing the processes
-                os.system("taskkill /PID %s /F"%(pIds))
-                print("Terminated the process %s" % (pIds))
+    if node_info['ip'] not in ["localhost", "127.0.0.1", "0.0.0.0"]:
+        ##Pushing the config.txt, network.txt and all the source files to the specified remote instances
+        node_info['user_name'] = 'ec2-user'
         
-        print("Check the logfiles in logs/testcase%s for analysing the transactions" % (i))
+        ##Change the command after passwordless ssh
+        command = r'ssh -i '+ pem_file + ' ' + node_info['user_name'] + '@' + node_info['ip']
+        # print(command)
+        
+        # child = wexpect.spawn(r'ssh -i C:\Users\Himanshu\.aws\GUIHimKeyPair.pem ' + node_info['user_name'] + '\@' + node_info['ip'], timeout=500)
+        print("Logging to the server %s" % (node_info['ip']))
+        child = pexpect.popen_spawn.PopenSpawn(command)
+        child.expect('$')
+        print("Deploying the code on the server %s" % (node_info['ip']))
+        child.sendline('mkdir P2Pnetwork\n')
+        child.expect("$")
+        child.sendline('mkdir P2Pnetwork/src\n')
+        child.expect("$")
+        child.sendline('mkdir P2Pnetwork/docs\n')
+        child.expect("$")
+
+        command2 = 'scp -i '+ pem_file +' .\*.java ' +node_info['user_name'] + '@' + node_info['ip']+':/home/ec2-user/P2Pnetwork/src/\n'
+        command3 = 'scp -i '+ pem_file +' .\*.txt ' +node_info['user_name'] + '@' + node_info['ip']+':/home/ec2-user/P2Pnetwork/src/\n'
+        
+        print(command3)
+        os.system(command3)
+        os.system(command3)
+
+        time.sleep(5)
+        
+        print(command2)
+        os.system(command2)
+
+        child.sendline('cd /home/ec2-user/P2Pnetwork/src\n')
+        child.expect('$')
+        print("Successfully deployed the code on the server %s" % (node_info['ip']))
+        # child.sendline("mkdir a\n")
+        # child.expect("$")
+        print("Compiling java files and starting the peer %s run." % (node))
+        child.sendline('javac *.java\n')
+        child.expect('$')
+        child.sendline('java Node '+ node +' 2\n')
+        try:
+            child.expect("Ready")
+            print("Successfully started the node %s on server %s"%(node, node_info['ip']))
+        except Exception as e:
+            print("The node %s failed to start on server %s"%(node, node_info['ip']))
+    else:
+        os.system("javac *.java")
+        os.system("java Node %s 2" % (node))
+
+    
+
+
+
+
+
+
+
+
+### Compilation ###
+# print("Compiling the java files.")
+# os.system("javac *.java")
+# print("Compilation successfull.")
+# time.sleep(2)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# testcase_description={0:"Constructing a random network based on the value of N and K specified in the config file.",
+#                       1:"One seller of boar, 3 buyers of boars, the remaining peers have no role. Fix the neighborhood structure so that buyers and sellers are 2-hop away in the peer-to-peer overlay network. Ensure that all items are sold and restocked and that all buyers can buy forever.",
+#                       2:"Simulate a race condition in buy() wherein a seller has stock of 1 for an item but then replies to multiple buyers."}
+
+
+# if(k==0):
+#     print("Running testcase: %s" % (0))
+#     print("Description: %s" % (testcase_description[0]))
+#     os.system("java Initializer")
+#     n=int(lines[0].split(" ")[0])
+#     #initiating the n nodes 
+#     for j in range(0,n):
+#         subprocess.Popen("java Node %s %s" % (j,0))
+#     print("Waiting for 20 secs for some transactions to get completed.")
+#     time.sleep(40)
+#     print("Wait time completed. Killing the processes now.")
+#     for j in range(0,n):
+#         output = subprocess.check_output("netstat -ano | findstr :"+ports[str(j)], shell = True)
+#         pIds = str(output).split("\\r")[0].split()[-1]
+        
+#         ##Killing the processes
+#         os.system("taskkill /PID %s /F"%(pIds))
+#         print("Terminated the process %s" % (pIds))
+    
+#     print("Check the logfiles in logs/testcase%s for analysing the transactions" % (0))
+
+# else:
+#     for i in range(k,3):
+#         print("Running testcase: %s" % (i))
+#         print("Description: %s" % (testcase_description[i]))
+
+#         if(i==1):
+            
+#             os.system("java Initializer %s" % (i))
+#             for j in range(0,6):
+#                 subprocess.Popen("java Node %s %s" % (j,i))
+#             print("Waiting for 20 secs for some transactions to get completed.")
+#             time.sleep(40)
+#             print("Wait time completed. Killing the processes now.")
+#             for j in range(0,6):
+#                 output = subprocess.check_output("netstat -ano | findstr :"+ports[str(j)], shell = True)
+#                 pIds = str(output).split("\\r")[0].split()[-1]
+                
+#                 ##Killing the processes
+#                 os.system("taskkill /PID %s /F"%(pIds))
+#                 print("Terminated the process %s" % (pIds))
+
+#         if(i==2):
+#             order=[1,2,3,0]
+#             os.system("java Initializer %s" % (i))
+#             for j in order:
+#                 subprocess.Popen("java Node %s %s" % (j,i))
+#             print("Waiting for 5 secs for some transactions to get completed.")
+#             time.sleep(5)
+#             print("Wait time completed. Killing the processes now.")
+#             for j in order:
+#                 output = subprocess.check_output("netstat -ano | findstr :"+ports[str(j)], shell = True)
+#                 pIds = str(output).split("\\r")[0].split()[-1]
+                
+#                 ##Killing the processes
+#                 os.system("taskkill /PID %s /F"%(pIds))
+#                 print("Terminated the process %s" % (pIds))
+        
+#         print("Check the logfiles in logs/testcase%s for analysing the transactions" % (i))
             
         

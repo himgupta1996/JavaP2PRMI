@@ -1,0 +1,85 @@
+1::Wed Mar 10 16:48:34 EST 2021::Logger Initialized
+1::Wed Mar 10 16:48:34 EST 2021::Peer 1: role: buyer
+1::Wed Mar 10 16:48:34 EST 2021::Peer 1: port_id: 8011
+1::Wed Mar 10 16:48:34 EST 2021::Peer 1: item to buy/sell: Boar
+1::Wed Mar 10 16:48:34 EST 2021::Peer 1: peers: [I@3f8f9dd6
+1::Wed Mar 10 16:48:34 EST 2021::Peer 1: available hop count for request: 5
+1::Wed Mar 10 16:48:35 EST 2021::Peer 1: Ready
+1::Wed Mar 10 16:48:35 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:48:35 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:48:37 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:48:42 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:48:42 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:48:44 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:48:49 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:48:49 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:48:51 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:48:56 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:48:56 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:48:58 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:49:03 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:49:03 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:49:05 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:49:10 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:49:10 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:49:12 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:49:17 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:49:17 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:49:19 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:49:24 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:49:24 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:49:26 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:49:31 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:49:31 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:49:33 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:49:38 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:49:38 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:49:40 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:49:45 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:49:45 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:49:47 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:49:52 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:49:52 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:49:54 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:49:59 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:49:59 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:50:01 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:50:06 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:50:06 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:50:08 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:50:13 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:50:13 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:50:15 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:50:20 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:50:20 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:50:22 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:50:27 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:50:27 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:50:29 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:50:34 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:50:34 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:50:36 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:50:41 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:50:41 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:50:43 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:50:48 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:50:48 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:50:50 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:50:55 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:50:55 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:50:55 EST 2021::Peer 1: The sellers who gave positive response are [0].
+1::Wed Mar 10 16:50:55 EST 2021::Peer 1: Trying to Buy 'Boar' from peer 0
+1::Wed Mar 10 16:50:55 EST 2021::Peer 1: Successfully bought 'Boar' from 0
+1::Wed Mar 10 16:51:00 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:51:00 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:51:00 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:51:05 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:51:05 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:51:05 EST 2021::Peer 1: The sellers who gave positive response are [0].
+1::Wed Mar 10 16:51:05 EST 2021::Peer 1: Trying to Buy 'Boar' from peer 0
+1::Wed Mar 10 16:51:05 EST 2021::Peer 1: Successfully bought 'Boar' from 0
+1::Wed Mar 10 16:51:10 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:51:10 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.
+1::Wed Mar 10 16:51:10 EST 2021::Peer 1: Couldn't find the item 'Boar' anywhere.
+1::Wed Mar 10 16:51:15 EST 2021::Peer 1: I want to buy 'Boar'
+1::Wed Mar 10 16:51:15 EST 2021::Peer 1: Sending lookup request for item 'Boar' in my neighbour peer 4.

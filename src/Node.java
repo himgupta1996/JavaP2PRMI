@@ -370,7 +370,7 @@ public class Node implements Hello {
 		
 		//Defining the logger file where the specific peer will log its actions
 		Logger logger = Logger.getLogger("MyLog");
-		String filename="../logs/"+"testcase"+testcase+"/"+"peer"+node_id+".log";
+		String filename="../docs/"+"peer"+node_id+".log";
 		FileHandler fh;
 		try{
 			fh = new FileHandler(filename);
