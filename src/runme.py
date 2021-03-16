@@ -27,8 +27,6 @@ ap.add_argument("-t", "--time", required=False,
    help="Provide the time in seconds for which you want to run the processes.")
 
 args = vars(ap.parse_args())
-for arg in args:
-    print(args[arg])
 
 # Marking the pem file location from the argument passed
 pem_file = ""
@@ -65,7 +63,7 @@ if args['kill'] == "no":
         ##If the node is to be deployed on the remote server
         if node_info['ip'] not in ["localhost", "127.0.0.1", "0.0.0.0"]:
 
-            if pemfile == '':
+            if pem_file == '':
                 raise("Provide the PEM file to run the remote commands. usage: runme.py [-h] [-pem PEMFILE] [-n NETWORK] [-k KILL] [-t TIME]")
 
             node_info['user_name'] = 'ec2-user'

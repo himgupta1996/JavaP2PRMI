@@ -326,7 +326,7 @@ public class Node implements Hello {
 	        		node_info[1]=node_info[1].replace("]","");
 					String[] s1=node_info[1].split(",");
 					int Peerlistlength = s1.length;
-					if (s1[0] == "")
+					if (s1[0].equals(""))
 					{
 						Peerlistlength = 0;
 					}
