@@ -29,7 +29,7 @@ Ec2 servers (Linux)
 3. Modify the file `src/network.txt` if you need a specific network of peers. Otherwise this will be generated randomly.
 4. Run the follwoing command in the `src` directory:
    `python runme.py`.  
-USECASES:  
+_USECASES:  _
 a. To run the network for <T> seconds: 'python runme.py -t <T>'  
 b. To provide a custom network: 'python runme.py -n <network.txt file path>'  
 c. To kill existing processes: 'python runme.py -k yes'  
@@ -50,7 +50,7 @@ c. To kill existing processes: 'python runme.py -k yes'
 8. Run the following command in `src` directory:   
    `python runme.py -pem <pem file used to ssh to all the machines>`
 9. To check the logs of peers specific to each machine, go to the folder `~/P2Pnetwork/docs/` in the EC2 servers and look for the log file `peer<i>.log`.  
-USECASES:  
+_USECASES:_  
 a. To run the network for <T> seconds: 'python runme.py -pem <per_file_location> -t <T>'  
 b. To provide a custom network: 'python runme.py -pem <pem_file_location> -n <network.txt_file_location>'  
 c. To kill existing processes on remote: 'python runme.py -pem <per_file_location> -k yes'  
@@ -59,15 +59,10 @@ c. To kill existing processes on remote: 'python runme.py -pem <per_file_locatio
 usage: runme.py [-h] [-pem PEMFILE] [-n NETWORK] [-k KILL] [-t TIME]
 
 optional arguments:
-  -h, --help            show this help message and exit
-  -pem PEMFILE, --pemfile PEMFILE
-                        Provide RSA Private key file
-  -n NETWORK, --network NETWORK
-                        Provide the network.txt file to use a custom P2P
-                        network.
-  -k KILL, --kill KILL  Provide yes to kill the processes on the ports
-                        specified in the config file.
-  -t TIME, --time TIME  Provide the time in seconds for which you want to run
-                        the processes.
+  -h, --help            show this help message and exit  
+  -pem PEMFILE, --pemfile PEMFILE Provide RSA Private key file  
+  -n NETWORK, --network NETWORK Provide the network.txt file to use a custom P2P network.  
+  -k KILL, --kill KILL  Provide yes to kill the processes on the ports specified in the config file.  
+  -t TIME, --time TIME  Provide the time in seconds for which you want to run the processes.  
 
  
