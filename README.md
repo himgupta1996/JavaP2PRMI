@@ -8,7 +8,7 @@ Please find the instructions below for testing the implementation.
 
 # System requirement
 
-Local machine (Windows)
+Local machine (Windows),
 Ec2 servers (Linux)
 
 # Source File Descriptions
