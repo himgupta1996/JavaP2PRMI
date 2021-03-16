@@ -48,12 +48,13 @@ c. To kill existing processes: 'python runme.py -k yes'
 6. Modify the file `src/config.txt` as desired.
 7. Modify the file `src/network.txt` if you need a specific network of peers. Otherwise this will be generated randomly.
 8. Run the following command in `src` directory:   
-   `python runme.py -pem <pem file used to ssh to all the machines>`
-9. To check the logs of peers specific to each machine, go to the folder `~/P2Pnetwork/docs/` in the EC2 servers and look for the log file `peer<i>.log`.  
+   `python runme.py -pem <pem file used to ssh to all the machines>`  
 **_USECASES:_**  
 a. To run the network for <T> seconds: 'python runme.py -pem <per_file_location> -t <T>'  
 b. To provide a custom network: 'python runme.py -pem <pem_file_location> -n <network.txt_file_location>'  
 c. To kill existing processes on remote: 'python runme.py -pem <per_file_location> -k yes'  
+
+9. To check the logs of peers specific to each machine, go to the folder `~/P2Pnetwork/docs/` in the EC2 servers and look for the log file `peer<i>.log`.  
 
 ### Usage of script runme.py 
 usage: runme.py [-h] [-pem PEMFILE] [-n NETWORK] [-k KILL] [-t TIME]
