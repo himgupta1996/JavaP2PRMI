@@ -30,7 +30,7 @@ Ec2 servers (Linux)
 4. Run the follwoing command in the `src` directory:
    `python runme.py`.  
 **_USECASES:_**  
-a. To run the network for <T> seconds: 'python runme.py -t <T>'  
+a. To run the network for T seconds: 'python runme.py -t T'
 b. To provide a custom network: 'python runme.py -n <network.txt file path>'  
 c. To kill existing processes: 'python runme.py -k yes'  
 (Important: See the section `Usage of script runme.py` for more details.) 
@@ -38,19 +38,21 @@ c. To kill existing processes: 'python runme.py -k yes'
 ### To run in EC2 servers present in same network
 
 1. Create EC2 instances with key pair value, and get the private .pem file (We used Amazon Linux 2 AMI 2.0.20210303.0 x86_64 HVM gp2 (ami-0fc61db8544a617ed) for testing).
-2. Edit the security group to ensure that the ports required by the peers to communicate are open.
-3. Run the following command from the local terminal (this is to set password-less ssh from the local machine to the ec2 servers):
+2. Edit the security group to ensure that the ports required by the peers to communicate are open. In our experience, the following security setting always works - 
+![image](https://user-images.githubusercontent.com/31957808/111381469-2339f680-867c-11eb-9b60-d20010eda986.png)
+But you can also try other security settings as long as they provide connection between the ports in different machines.
+3. Set up password-less ssh from the local machine to the ec2 servers by running the following command from the local terminal:
     `ssh -i <pem_file_path> ec2-user@<ec2_public_ip>` with the private pem file and the public IP address of the EC2 instance that has been set up. (This will add the ec2 server to the known_host file so that you can ssh from the script without the need of a password).
 4. Run the following commands on the EC2 instance to install java libraries:
    + `sudo yum install java-1.8.0-openjdk`
    + `sudo yum install java-devel`
-5. Go to directory `src` which contains the source and config files.
+5. Now, on your local machine, go to directory `src` which contains the source and config files.
 6. Modify the file `src/config.txt` as desired.
-7. Modify the file `src/network.txt` if you need a specific network of peers. Otherwise this will be generated randomly.
-8. Run the following command in `src` directory:   
+7. Modify the file `src/network.txt` if you need a specific network of peers. Otherwise this will be generated randomly when you execute the python script.
+8. Run the following command in `src` directory:
    `python runme.py -pem <pem file used to ssh to all the machines>`  
 **_USECASES:_**  
-a. To run the network for <T> seconds: 'python runme.py -pem <per_file_location> -t <T>'  
+a. To run the network for T seconds: 'python runme.py -pem <per_file_location> -t T'  
 b. To provide a custom network: 'python runme.py -pem <pem_file_location> -n <network.txt_file_location>'  
 c. To kill existing processes on remote: 'python runme.py -pem <per_file_location> -k yes'  
 
