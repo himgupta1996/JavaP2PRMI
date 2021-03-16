@@ -1,80 +1,15 @@
-1::Wed Mar 10 20:08:34 EST 2021::Logger Initialized
-1::Wed Mar 10 20:08:34 EST 2021::Peer 4: role: buyer
-1::Wed Mar 10 20:08:34 EST 2021::Peer 4: port_id: 8014
-1::Wed Mar 10 20:08:34 EST 2021::Peer 4: item to buy/sell: Salt
-1::Wed Mar 10 20:08:34 EST 2021::Peer 4: available hop count for request: 5
-1::Wed Mar 10 20:08:35 EST 2021::Peer 4: testcase: 0
-1::Wed Mar 10 20:08:35 EST 2021::Peer 4: Ready
-1::Wed Mar 10 20:08:35 EST 2021::Peer 4: I want to buy 'Salt'
-1::Wed Mar 10 20:08:35 EST 2021::Peer 4: Sending lookup request for item 'Salt' in my neighbour peer 1.
-21::Wed Mar 10 20:08:36 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
-23::Wed Mar 10 20:08:36 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Fish'.
-1::Wed Mar 10 20:08:36 EST 2021::Peer 4: Sending lookup request for item 'Salt' in my neighbour peer 2.
-25::Wed Mar 10 20:08:36 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
-1::Wed Mar 10 20:08:36 EST 2021::Peer 4: Couldn't find the item 'Salt' anywhere.
-1::Wed Mar 10 20:08:41 EST 2021::Peer 4: I want to buy 'Salt'
-1::Wed Mar 10 20:08:41 EST 2021::Peer 4: Sending lookup request for item 'Salt' in my neighbour peer 1.
-1::Wed Mar 10 20:08:41 EST 2021::Peer 4: Sending lookup request for item 'Salt' in my neighbour peer 2.
-1::Wed Mar 10 20:08:41 EST 2021::Peer 4: Couldn't find the item 'Salt' anywhere.
-28::Wed Mar 10 20:08:41 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
-21::Wed Mar 10 20:08:41 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Salt'.
-23::Wed Mar 10 20:08:41 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Salt'.
-28::Wed Mar 10 20:08:41 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
-1::Wed Mar 10 20:08:46 EST 2021::Peer 4: I want to buy 'Salt'
-1::Wed Mar 10 20:08:46 EST 2021::Peer 4: Sending lookup request for item 'Salt' in my neighbour peer 1.
-1::Wed Mar 10 20:08:46 EST 2021::Peer 4: Sending lookup request for item 'Salt' in my neighbour peer 2.
-1::Wed Mar 10 20:08:46 EST 2021::Peer 4: Couldn't find the item 'Salt' anywhere.
-28::Wed Mar 10 20:08:46 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Salt'.
-26::Wed Mar 10 20:08:46 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Salt'.
-28::Wed Mar 10 20:08:46 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
-23::Wed Mar 10 20:08:46 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Fish'.
-1::Wed Mar 10 20:08:51 EST 2021::Peer 4: I want to buy 'Salt'
-1::Wed Mar 10 20:08:51 EST 2021::Peer 4: Sending lookup request for item 'Salt' in my neighbour peer 1.
-1::Wed Mar 10 20:08:51 EST 2021::Peer 4: Sending lookup request for item 'Salt' in my neighbour peer 2.
-1::Wed Mar 10 20:08:51 EST 2021::Peer 4: Couldn't find the item 'Salt' anywhere.
-28::Wed Mar 10 20:08:51 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Salt'.
-23::Wed Mar 10 20:08:51 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Salt'.
-23::Wed Mar 10 20:08:51 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Salt'.
-28::Wed Mar 10 20:08:51 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Salt'.
-21::Wed Mar 10 20:08:51 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
-23::Wed Mar 10 20:08:51 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.
-1::Wed Mar 10 20:08:56 EST 2021::Peer 4: I want to buy 'Salt'
-1::Wed Mar 10 20:08:56 EST 2021::Peer 4: Sending lookup request for item 'Salt' in my neighbour peer 1.
-1::Wed Mar 10 20:08:56 EST 2021::Peer 4: Sending lookup request for item 'Salt' in my neighbour peer 2.
-1::Wed Mar 10 20:08:56 EST 2021::Peer 4: Couldn't find the item 'Salt' anywhere.
-28::Wed Mar 10 20:08:56 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Salt'.
-23::Wed Mar 10 20:08:56 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Salt'.
-23::Wed Mar 10 20:08:56 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Salt'.
-28::Wed Mar 10 20:08:56 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
-21::Wed Mar 10 20:08:56 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Salt'.
-23::Wed Mar 10 20:08:56 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.
-1::Wed Mar 10 20:09:01 EST 2021::Peer 4: I want to buy 'Salt'
-1::Wed Mar 10 20:09:01 EST 2021::Peer 4: Sending lookup request for item 'Salt' in my neighbour peer 1.
-1::Wed Mar 10 20:09:01 EST 2021::Peer 4: Sending lookup request for item 'Salt' in my neighbour peer 2.
-1::Wed Mar 10 20:09:01 EST 2021::Peer 4: Couldn't find the item 'Salt' anywhere.
-21::Wed Mar 10 20:09:01 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Salt'.
-23::Wed Mar 10 20:09:01 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Salt'.
-23::Wed Mar 10 20:09:01 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Salt'.
-21::Wed Mar 10 20:09:01 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
-21::Wed Mar 10 20:09:01 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Salt'.
-23::Wed Mar 10 20:09:01 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.
-1::Wed Mar 10 20:09:06 EST 2021::Peer 4: I want to buy 'Salt'
-1::Wed Mar 10 20:09:06 EST 2021::Peer 4: Sending lookup request for item 'Salt' in my neighbour peer 1.
-1::Wed Mar 10 20:09:06 EST 2021::Peer 4: Sending lookup request for item 'Salt' in my neighbour peer 2.
-1::Wed Mar 10 20:09:06 EST 2021::Peer 4: Couldn't find the item 'Salt' anywhere.
-21::Wed Mar 10 20:09:06 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Salt'.
-23::Wed Mar 10 20:09:06 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Salt'.
-23::Wed Mar 10 20:09:06 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Salt'.
-21::Wed Mar 10 20:09:06 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
-21::Wed Mar 10 20:09:06 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Salt'.
-23::Wed Mar 10 20:09:06 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.
-1::Wed Mar 10 20:09:11 EST 2021::Peer 4: I want to buy 'Salt'
-1::Wed Mar 10 20:09:11 EST 2021::Peer 4: Sending lookup request for item 'Salt' in my neighbour peer 1.
-1::Wed Mar 10 20:09:11 EST 2021::Peer 4: Sending lookup request for item 'Salt' in my neighbour peer 2.
-1::Wed Mar 10 20:09:11 EST 2021::Peer 4: Couldn't find the item 'Salt' anywhere.
-21::Wed Mar 10 20:09:11 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Salt'.
-23::Wed Mar 10 20:09:11 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Salt'.
-23::Wed Mar 10 20:09:11 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Salt'.
-21::Wed Mar 10 20:09:11 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Salt'.
-21::Wed Mar 10 20:09:11 EST 2021::Peer 4: Sending the request to 1 to lookup for the item 'Boar'.
-23::Wed Mar 10 20:09:11 EST 2021::Peer 4: Sending the request to 2 to lookup for the item 'Boar'.
+1::Mon Mar 15 20:12:19 EDT 2021::Logger Initialized
+1::Mon Mar 15 20:12:20 EDT 2021::Peer 4: role: buyer
+1::Mon Mar 15 20:12:20 EDT 2021::Peer 4: port_id: 8014
+1::Mon Mar 15 20:12:20 EDT 2021::Peer 4: item to buy/sell: Boar
+1::Mon Mar 15 20:12:20 EDT 2021::Peer 4: available hop count for request: 5
+1::Mon Mar 15 20:12:20 EDT 2021::Peer 4: testcase: 0
+1::Mon Mar 15 20:12:20 EDT 2021::Peer 4: Ready
+1::Mon Mar 15 20:12:20 EDT 2021::Peer 4: I want to buy 'Boar'
+1::Mon Mar 15 20:12:20 EDT 2021::Peer 4: Sending lookup request for item 'Boar' in my neighbour peer 2.
+21::Mon Mar 15 20:12:20 EDT 2021::I am the node 3
+21::Mon Mar 15 20:12:25 EDT 2021::Peer 4: Sending the request to 2 to lookup for the item 'Fish'.
+1::Mon Mar 15 20:12:29 EDT 2021::Peer 4: Sending lookup request for item 'Boar' in my neighbour peer 3.
+24::Mon Mar 15 20:12:29 EDT 2021::I am the node 2
+21::Mon Mar 15 20:12:29 EDT 2021::Peer 4: Couldn't connect to peer 2 to buy.
+1::Mon Mar 15 20:12:30 EDT 2021::Peer 4: Couldn't find the item 'Boar' anywhere.

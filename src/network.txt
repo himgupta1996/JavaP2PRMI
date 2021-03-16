@@ -1,4 +1,6 @@
-0 [1,2,3] seller Fish 1
-1 [0] buyer Fish
-2 [0] buyer Fish
-3 [0] buyer Fish
+0 [3,5] buyer Salt
+1 [5,3] buyer Fish
+2 [4] seller Fish 5
+3 [0,1] seller Boar 5
+4 [2] buyer Boar
+5 [0,1] buyer Salt

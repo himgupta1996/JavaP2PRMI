@@ -74,7 +74,6 @@ public class Network {
 			{
 				ArrayList<Integer> i_neighbors = new ArrayList<Integer>();
 				p2p.put(i, i_neighbors);
-				System.out.println(all_nodes_copy);
 				while(p2p.get(i).size() < K && all_nodes_copy.size() > 0)
 				{
 					Integer Random_Element = this.getRandomElement(all_nodes_copy);

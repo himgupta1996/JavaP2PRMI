@@ -1,0 +1,15 @@
+1::Mon Mar 15 20:13:20 EDT 2021::Logger Initialized
+1::Mon Mar 15 20:13:21 EDT 2021::Peer 3: role: seller
+1::Mon Mar 15 20:13:21 EDT 2021::Peer 3: port_id: 8013
+1::Mon Mar 15 20:13:21 EDT 2021::Peer 3: item to buy/sell: Boar
+1::Mon Mar 15 20:13:21 EDT 2021::Peer 3: available hop count for request: 5
+1::Mon Mar 15 20:13:21 EDT 2021::Peer 3: testcase: 0
+1::Mon Mar 15 20:13:21 EDT 2021::Peer 3: Ready
+21::Mon Mar 15 20:13:21 EDT 2021::Peer 3: Sending the request to 1 to lookup for the item 'Salt'.
+21::Mon Mar 15 20:13:21 EDT 2021::Peer 3: Sending the request to 1 to lookup for the item 'Salt'.
+24::Mon Mar 15 20:13:21 EDT 2021::Peer 3: Sending the request to 0 to lookup for the item 'Salt'.
+24::Mon Mar 15 20:13:21 EDT 2021::Peer 3: Sending the request to 0 to lookup for the item 'Fish'.
+21::Mon Mar 15 20:13:26 EDT 2021::Peer 3: Sending the request to 1 to lookup for the item 'Salt'.
+21::Mon Mar 15 20:13:26 EDT 2021::Peer 3: Sending the request to 1 to lookup for the item 'Salt'.
+24::Mon Mar 15 20:13:26 EDT 2021::Peer 3: Sending the request to 0 to lookup for the item 'Salt'.
+24::Mon Mar 15 20:13:27 EDT 2021::Peer 3: Sending the request to 0 to lookup for the item 'Fish'.

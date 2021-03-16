@@ -1,65 +1,11 @@
-1::Wed Mar 10 20:08:34 EST 2021::Logger Initialized
-1::Wed Mar 10 20:08:34 EST 2021::Peer 1: role: seller
-1::Wed Mar 10 20:08:34 EST 2021::Peer 1: port_id: 8011
-1::Wed Mar 10 20:08:34 EST 2021::Peer 1: item to buy/sell: Boar
-1::Wed Mar 10 20:08:34 EST 2021::Peer 1: available hop count for request: 5
-1::Wed Mar 10 20:08:34 EST 2021::Peer 1: testcase: 0
-1::Wed Mar 10 20:08:35 EST 2021::Peer 1: Ready
-21::Wed Mar 10 20:08:35 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Salt'.
-25::Wed Mar 10 20:08:36 EST 2021::Peer 1: I have 5 items of 'Boar'
-25::Wed Mar 10 20:08:36 EST 2021::Peer 1: Sending confirmation to 3
-24::Wed Mar 10 20:08:36 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
-28::Wed Mar 10 20:08:36 EST 2021::Peer 1: I have 5 items of 'Boar'
-28::Wed Mar 10 20:08:36 EST 2021::Peer 1: Sending confirmation to 4
-21::Wed Mar 10 20:08:36 EST 2021::Peer 1: I have 5 items of 'Boar'
-21::Wed Mar 10 20:08:36 EST 2021::Peer 1: Sending confirmation to 4
-24::Wed Mar 10 20:08:36 EST 2021::Peer 1: I have 5 items of 'Boar'
-24::Wed Mar 10 20:08:36 EST 2021::Peer 1: Sending confirmation to 3
-29::Wed Mar 10 20:08:41 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Salt'.
-29::Wed Mar 10 20:08:41 EST 2021::Peer 1: I have 3 items of 'Boar'
-29::Wed Mar 10 20:08:41 EST 2021::Peer 1: Sending confirmation to 4
-24::Wed Mar 10 20:08:41 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
-25::Wed Mar 10 20:08:41 EST 2021::Peer 1: I have 3 items of 'Boar'
-25::Wed Mar 10 20:08:41 EST 2021::Peer 1: Sending confirmation to 3
-29::Wed Mar 10 20:08:41 EST 2021::Peer 1: I have 3 items of 'Boar'
-24::Wed Mar 10 20:08:41 EST 2021::Peer 1: I have 3 items of 'Boar'
-29::Wed Mar 10 20:08:41 EST 2021::Peer 1: Sending confirmation to 4
-24::Wed Mar 10 20:08:41 EST 2021::Peer 1: Sending confirmation to 3
-29::Wed Mar 10 20:08:46 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Salt'.
-24::Wed Mar 10 20:08:46 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
-24::Wed Mar 10 20:08:46 EST 2021::Peer 1: I have 1 items of 'Boar'
-24::Wed Mar 10 20:08:46 EST 2021::Peer 1: Sending confirmation to 3
-29::Wed Mar 10 20:08:46 EST 2021::Peer 1: I have 1 items of 'Boar'
-29::Wed Mar 10 20:08:46 EST 2021::Peer 1: Sending confirmation to 4
-24::Wed Mar 10 20:08:46 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Fish'.
-29::Wed Mar 10 20:08:51 EST 2021::Peer 1: My items are finished. Restocking a random item.
-29::Wed Mar 10 20:08:51 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Salt'.
-24::Wed Mar 10 20:08:51 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
-24::Wed Mar 10 20:08:51 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
-29::Wed Mar 10 20:08:51 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Salt'.
-28::Wed Mar 10 20:08:51 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Boar'.
-24::Wed Mar 10 20:08:51 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Boar'.
-28::Wed Mar 10 20:08:56 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Salt'.
-24::Wed Mar 10 20:08:56 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
-24::Wed Mar 10 20:08:56 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
-28::Wed Mar 10 20:08:56 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Boar'.
-29::Wed Mar 10 20:08:56 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Salt'.
-24::Wed Mar 10 20:08:56 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Boar'.
-29::Wed Mar 10 20:09:01 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Salt'.
-24::Wed Mar 10 20:09:01 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
-24::Wed Mar 10 20:09:01 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
-29::Wed Mar 10 20:09:01 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Boar'.
-29::Wed Mar 10 20:09:01 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Salt'.
-24::Wed Mar 10 20:09:01 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Boar'.
-29::Wed Mar 10 20:09:06 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Salt'.
-24::Wed Mar 10 20:09:06 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
-24::Wed Mar 10 20:09:06 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
-29::Wed Mar 10 20:09:06 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Boar'.
-24::Wed Mar 10 20:09:06 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Boar'.
-29::Wed Mar 10 20:09:06 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Salt'.
-29::Wed Mar 10 20:09:11 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Salt'.
-24::Wed Mar 10 20:09:11 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
-24::Wed Mar 10 20:09:11 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Salt'.
-29::Wed Mar 10 20:09:11 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Salt'.
-29::Wed Mar 10 20:09:11 EST 2021::Peer 1: Sending the request to 3 to lookup for the item 'Boar'.
-24::Wed Mar 10 20:09:11 EST 2021::Peer 1: Sending the request to 4 to lookup for the item 'Boar'.
+1::Mon Mar 15 20:12:20 EDT 2021::Logger Initialized
+1::Mon Mar 15 20:12:20 EDT 2021::Peer 1: role: seller
+1::Mon Mar 15 20:12:20 EDT 2021::Peer 1: port_id: 8011
+1::Mon Mar 15 20:12:20 EDT 2021::Peer 1: item to buy/sell: Fish
+1::Mon Mar 15 20:12:20 EDT 2021::Peer 1: available hop count for request: 5
+1::Mon Mar 15 20:12:20 EDT 2021::Peer 1: testcase: 0
+1::Mon Mar 15 20:12:20 EDT 2021::Peer 1: Ready
+21::Mon Mar 15 20:12:21 EDT 2021::I am the node 5
+23::Mon Mar 15 20:12:25 EDT 2021::I am the node 0
+21::Mon Mar 15 20:12:26 EDT 2021::Peer 1: Sending the request to 0 to lookup for the item 'Salt'.
+21::Mon Mar 15 20:12:29 EDT 2021::Peer 1: Couldn't connect to peer 0 to buy.

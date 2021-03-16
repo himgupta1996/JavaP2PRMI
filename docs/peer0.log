@@ -1,0 +1,21 @@
+1::Mon Mar 15 20:13:20 EDT 2021::Logger Initialized
+1::Mon Mar 15 20:13:21 EDT 2021::Peer 0: role: buyer
+1::Mon Mar 15 20:13:21 EDT 2021::Peer 0: port_id: 8010
+1::Mon Mar 15 20:13:21 EDT 2021::Peer 0: item to buy/sell: Salt
+1::Mon Mar 15 20:13:21 EDT 2021::Peer 0: available hop count for request: 5
+1::Mon Mar 15 20:13:21 EDT 2021::Peer 0: testcase: 0
+1::Mon Mar 15 20:13:21 EDT 2021::Peer 0: Ready
+1::Mon Mar 15 20:13:21 EDT 2021::Peer 0: I want to buy 'Salt'
+1::Mon Mar 15 20:13:21 EDT 2021::Peer 0: Sending lookup request for item 'Salt' in my neighbour peer 3.
+21::Mon Mar 15 20:13:21 EDT 2021::Peer 0: Sending the request to 3 to lookup for the item 'Salt'.
+1::Mon Mar 15 20:13:21 EDT 2021::Peer 0: Sending lookup request for item 'Salt' in my neighbour peer 5.
+1::Mon Mar 15 20:13:21 EDT 2021::Peer 0: Couldn't find the item 'Salt' anywhere.
+21::Mon Mar 15 20:13:21 EDT 2021::Peer 0: Sending the request to 3 to lookup for the item 'Fish'.
+24::Mon Mar 15 20:13:21 EDT 2021::Peer 0: Sending the request to 5 to lookup for the item 'Fish'.
+1::Mon Mar 15 20:13:26 EDT 2021::Peer 0: I want to buy 'Salt'
+1::Mon Mar 15 20:13:26 EDT 2021::Peer 0: Sending lookup request for item 'Salt' in my neighbour peer 3.
+1::Mon Mar 15 20:13:26 EDT 2021::Peer 0: Sending lookup request for item 'Salt' in my neighbour peer 5.
+21::Mon Mar 15 20:13:26 EDT 2021::Peer 0: Sending the request to 3 to lookup for the item 'Salt'.
+1::Mon Mar 15 20:13:26 EDT 2021::Peer 0: Couldn't find the item 'Salt' anywhere.
+21::Mon Mar 15 20:13:27 EDT 2021::Peer 0: Sending the request to 3 to lookup for the item 'Fish'.
+24::Mon Mar 15 20:13:27 EDT 2021::Peer 0: Sending the request to 5 to lookup for the item 'Fish'.
