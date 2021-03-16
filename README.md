@@ -28,11 +28,11 @@ Ec2 servers (Linux)
 2.  Modify the file `src/config.txt` as desired. 
 3. Modify the file `src/network.txt` if you need a specific network of peers. Otherwise this will be generated randomly.
 4. Run the follwoing command in the `src` directory:
-   `python runme.py`. 
-   USECASES:
-    a. To run the network for <T> seconds: 'python runme.py -t <T>'
-    b. To provide a custom network: 'python runme.py -n <network.txt file path>'
-    c. To kill existing processes: 'python runme.py -k yes'
+   `python runme.py`.  
+USECASES:  
+a. To run the network for <T> seconds: 'python runme.py -t <T>'  
+b. To provide a custom network: 'python runme.py -n <network.txt file path>'  
+c. To kill existing processes: 'python runme.py -k yes'  
 (Important: See the section `Usage of script runme.py` for more details.) 
 
 ### To run in EC2 servers present in same network
@@ -47,13 +47,13 @@ Ec2 servers (Linux)
 5. Go to directory `src` which contains the source and config files.
 6. Modify the file `src/config.txt` as desired.
 7. Modify the file `src/network.txt` if you need a specific network of peers. Otherwise this will be generated randomly.
-8. Run the following command in `src` directory: 
+8. Run the following command in `src` directory:   
    `python runme.py -pem <pem file used to ssh to all the machines>`
-   USECASES:\n
-    a. To run the network for <T> seconds: 'python runme.py -pem <per_file_location> -t <T>'\n
-    b. To provide a custom network: 'python runme.py -pem <pem_file_location> -n <network.txt_file_location>'\n
-    c. To kill existing processes on remote: 'python runme.py -pem <per_file_location> -k yes'\n
-9. To check the logs of peers specific to each machine, go to the folder `~/P2Pnetwork/docs/` in the EC2 servers and look for the log file `peer<i>.log`.
+9. To check the logs of peers specific to each machine, go to the folder `~/P2Pnetwork/docs/` in the EC2 servers and look for the log file `peer<i>.log`.  
+USECASES:  
+a. To run the network for <T> seconds: 'python runme.py -pem <per_file_location> -t <T>'  
+b. To provide a custom network: 'python runme.py -pem <pem_file_location> -n <network.txt_file_location>'  
+c. To kill existing processes on remote: 'python runme.py -pem <per_file_location> -k yes'  
 
 ### Usage of script runme.py 
 usage: runme.py [-h] [-pem PEMFILE] [-n NETWORK] [-k KILL] [-t TIME]
