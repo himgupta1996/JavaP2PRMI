@@ -8,8 +8,10 @@ Please find the instructions below for testing the implementation.
 
 # System requirement
 
-Local machine (Windows),
-Ec2 servers (Linux)
+Local machine (Windows),  
+Ec2 servers (Linux)  
+Python runme.py module dependencies that we used:
+os, subprocess, time, sys, re, pexpect, pexpect.popen_spawn, argparse
 
 # Source File Descriptions
  
