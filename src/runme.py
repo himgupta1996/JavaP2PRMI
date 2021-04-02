@@ -107,7 +107,7 @@ if args['kill'] == "no":
                 print("?????? The node %s failed to start on server %s ??????"%(node, node_info['ip']))
         else:
             # os.system("javac *.java")
-            subprocess.Popen("java Node %s" % (node))
+            subprocess.Popen("java Node %s" % (node), shell = True)
             print("###### Started the peer %s on local machine ######" % (node))
 
     print("------ All the nodes Successfully deployed. ------")
