@@ -1,7 +1,7 @@
 This repository contains implementation of the Lab 1 Project of COMPSCI 677 course at UMass Amherst. <br>
 Contributors - <br>
-Abhishek Lalwani (alalwani@umass.edu) <br>
 Himanshu Gupta (hgupta@umass.edu) <br>
+Abhishek Lalwani (alalwani@umass.edu) <br>
 Kunal Chakrabarty (kchakrabarty@umass.edu) <br>
 
 Please find the instructions below for testing the implementation.
